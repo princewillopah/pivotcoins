@@ -1,0 +1,55 @@
+@import "../generics/colors";
+
+#bg-about-us{
+  // background:$color-2;
+  background:$color-1 url('../img/about/about-bg.png') no-repeat center center ;
+  background-size: cover;
+  width: 100%;
+  // height:40vh;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // clip-path: polygon(100% 0px, 100% 80%, 52% 80%, 50% 91%, 48% 80%, 0px 80%, 0px 0px);
+  .contents{
+    &-message{
+      h1{color:#aaa;}
+      div{color: $color-7; font-style: italic;
+        a{text-decoration: none;}
+      }
+    }
+  }
+}//hero
+#about-us{
+  // margin-top:-120px;
+  // padding-top:150px;
+  // padding-bottom:150px;
+  background: #f2f2f2;
+  .about-us-main{
+    margin-bottom: 30px;
+    p{color:$color-2; font-weight:300; font-size: 18px;line-height:30px;}
+  }
+  hr{background: $color-2; width: 40%; height: 2px;}
+}
+
+#about-us-vission{
+
+  padding-top:100px;
+  background: $color-1;
+  // background: #eee;
+  .about-us-main{
+    h2{font-size: 30px; text-transform: uppercase;padding-bottom: 20px;color:$color-6}
+    p{line-height: 28px;color:$color-4}
+  }
+
+}
+#about-us-vision{
+  padding:100px;
+  background: #fff;
+  .about-us-main{
+    h2{font-size: 30px; text-transform: uppercase;padding-bottom: 20px;}
+    p{line-height: 28px}
+  }
+}
+
+

@@ -1,0 +1,12 @@
+@import "../generics/colors";
+
+.sections{
+  padding: 100px 20px;
+  //text-align: center;
+  .head{
+    text-align: center;
+    margin-bottom: 50px;
+    h1{font-size: 35px;font-weight: bold;text-transform: uppercase; color: $color-1}
+    p{font-style: italic;color: $color-6;font-weight: 500;}
+  }
+}
