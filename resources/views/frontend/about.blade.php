@@ -87,7 +87,7 @@
     
             </div>
         </section>
-    <section id="about-us-vission" class="sections">
+    <section id="about-us-vission" class="">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">

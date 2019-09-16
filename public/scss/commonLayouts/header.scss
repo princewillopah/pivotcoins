@@ -9,7 +9,7 @@
     }
     a{
       color: #aaa !important;
-      font-size: 18px; 
+      font-size: 16px; 
       font-weight: 400;
       // // font-family:Uni Sans ThinCap;
       // font-family:UniSansW01-Regular; 
@@ -26,8 +26,9 @@
       li{
         border-right: 1px solid #aaa;
         transition: all .5s ease;
-        font-size: 18px; 
+        font-size: 16px; 
       font-weight: 400;
+      line-height: 35px;
       // font-family:Uni Sans ThinCap;
       // font-family:UniSansW01-Regular;
       font-family: 'Blinker', sans-serif!important;
@@ -60,10 +61,11 @@
     }
     a.nav-link{
       color:$color-1;
-      font-size: 18px; 
-      font-weight: 700;
-      font-family:Uni Sans Thin;
-      // font-family:UniSansW01-Regular;
+      font-size: 16px; 
+      font-weight: 600;
+      // font-family:Uni Sans W01 Book;
+
+      font-family:UniSansW01-Regular;
       // font-family: 'Blinker', sans-serif!important;
       text-transform:uppercase;
       transition: all .9s ease; 

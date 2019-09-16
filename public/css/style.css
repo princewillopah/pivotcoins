@@ -5,15 +5,44 @@
   .sections .head {
     text-align: center;
     margin-bottom: 50px; }
-    .sections .head h1 {
-      font-size: 35px;
-      font-weight: bold;
+    .sections .head h2 {
+      font-size: 30px;
+      font-weight: 600;
       text-transform: uppercase;
-      color: #0d1120; }
+      color: rgba(170, 170, 170, 0.9);
+      font-family: "Blinker", sans-serif !important; }
     .sections .head p {
-      font-style: italic;
       color: #2b7a78;
       font-weight: 500; }
+
+.sections-white {
+  padding: 100px 20px; }
+  .sections-white .head {
+    text-align: center;
+    margin-bottom: 50px; }
+    .sections-white .head h2 {
+      font-size: 30px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: rgba(13, 17, 32, 0.9);
+      font-family: "Blinker", sans-serif !important; }
+    .sections-white .head p {
+      color: #2b7a78;
+      font-weight: 500; }
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(170, 170, 170, 0.6);
+  font-family: "Blinker", sans-serif !important; }
+
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(13, 17, 32, 0.8);
+  font-family: "Blinker", sans-serif !important; }
 
 .bttn-fill.bttn-primary {
   background: #0d1120;
@@ -42,6 +71,10 @@
   src: url("fonts/UniSans/Uni Sans Heavy.otf"); }
 
 @font-face {
+  font-family: Uni Sans W01 Book;
+  src: url("fonts/UniSans/Uni Sans W01 Book.ttf"); }
+
+@font-face {
   font-family: "UniSansW01-Regular";
   src: url("//db.onlinewebfonts.com/t/ab804af7699fabaf769911c77bb4d115.eot");
   src: url("//db.onlinewebfonts.com/t/ab804af7699fabaf769911c77bb4d115.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ab804af7699fabaf769911c77bb4d115.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ab804af7699fabaf769911c77bb4d115.woff") format("woff"), url("//db.onlinewebfonts.com/t/ab804af7699fabaf769911c77bb4d115.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ab804af7699fabaf769911c77bb4d115.svg#UniSansW01-Regular") format("svg"); }
@@ -65,6 +98,12 @@
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.12);
   transition: all .5s ease !important; }
 
+body p {
+  font-family: 'Rubik','Heebo', sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+  line-height: 28px; }
+
 #header #top-bar {
   display: flex;
   background: #0d1120; }
@@ -72,7 +111,7 @@
     padding: 12px; }
   #header #top-bar a {
     color: #aaa !important;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     font-family: "Blinker", sans-serif !important; }
     #header #top-bar a:hover {
@@ -97,8 +136,9 @@
   #header #top-bar .faq-reg-log li {
     border-right: 1px solid #aaa;
     transition: all .5s ease;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
+    line-height: 35px;
     font-family: "Blinker", sans-serif !important; }
     #header #top-bar .faq-reg-log li a {
       color: #aaa !important;
@@ -130,9 +170,9 @@
 
 #header #navbar a.nav-link {
   color: #0d1120;
-  font-size: 18px;
-  font-weight: 700;
-  font-family: Uni Sans Thin;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: UniSansW01-Regular;
   text-transform: uppercase;
   transition: all .9s ease; }
   #header #navbar a.nav-link:hover {
@@ -160,32 +200,37 @@
     #footer .footer-main .media .nav-link {
       width: 40px;
       height: 40px;
-      background: transparent;
+      background: #838383;
       margin-right: 5px;
       border-radius: 50%;
-      padding: 5px 0px 5px 10px;
-      border: 2px solid #aaa;
-      transition: all .9s ease; }
+      padding: 7px 0px 5px 0px;
+      border: 2px solid #838383;
+      transition: all .9s ease;
+      text-align: center;
+      line-height: 16px; }
       #footer .footer-main .media .nav-link .fa {
-        color: #2b7a78;
-        font-weight: 500;
+        color: #0d1120;
+        font-weight: 700;
         transition: all .9s ease; }
       #footer .footer-main .media .nav-link:hover {
-        border: 2px solid #fff;
+        border: 2px solid #838383;
         transition: all .9s ease; }
         #footer .footer-main .media .nav-link:hover .fa {
           color: #3aafa9;
           transition: all .9s ease; }
+      #footer .footer-main .media .nav-link:hover {
+        background: transparent; }
     #footer .footer-main .main-footer h5 {
       color: #aaa;
       font-weight: bold;
       text-transform: uppercase;
-      font-size: 18px; }
+      font-size: 16px;
+      font-family: UniSansW01-Regular, "Blinker", sans-serif !important; }
     #footer .footer-main .main-footer .abt a {
       color: #838383;
       padding: 0 0 7px 0; }
     #footer .footer-main .main-other a {
-      color: #2b7a78;
+      color: #838383;
       padding: 0 0 7px 0;
       margin-right: 10px;
       font-size: 25px; }
@@ -193,9 +238,9 @@
       color: #838383; }
       #footer .footer-main .main-footer4 .footer-contact {
         display: flex;
-        margin-bottom: 5px; }
+        margin-bottom: 7px; }
         #footer .footer-main .main-footer4 .footer-contact .fa {
-          color: #2b7a78;
+          color: #838383;
           margin-right: 8px;
           margin-top: 5px; }
         #footer .footer-main .main-footer4 .footer-contact span {
@@ -386,7 +431,7 @@
 
 #home-about-page {
   margin-top: -80px;
-  padding-top: 200px;
+  padding-top: 250px;
   padding-bottom: 100px; }
   #home-about-page .info-head {
     margin-bottom: 2opx; }
@@ -395,10 +440,6 @@
       font-weight: bold;
       color: #0d1120;
       text-transform: uppercase; }
-  #home-about-page .info p {
-    font-weight: 300;
-    color: #0d1120;
-    line-height: 28px; }
   #home-about-page .info a.btn.bttn-stretch.bttn-md.bttn-primary {
     color: #0d1120 !important;
     font-weight: bold;
@@ -568,7 +609,7 @@
     transition: all .9s ease; }
   .steps #sync2 .item .topic {
     text-align: left; }
-  .steps #sync2 .item .topic h1 {
+  .steps #sync2 .item .topic h3 {
     font-size: 19px;
     color: #0d1120;
     font-weight: 600; }
@@ -582,7 +623,7 @@
     display: none; }
   .steps #sync2 .current .item {
     background: #0d1120; }
-    .steps #sync2 .current .item h1 {
+    .steps #sync2 .current .item h3 {
       color: #3aafa9;
       font-weight: 600; }
     .steps #sync2 .current .item p {
@@ -709,7 +750,8 @@
   /* .btcwdgt-s-price .btcwdgt-body {height: 0em !important;} */ }
   .current-prices-info p {
     color: #0d1120;
-    font-weight: 700; }
+    font-weight: 500;
+    font-family: UniSansW01-Regular, "Blinker", sans-serif !important; }
   .current-prices-info .ethereum-price-widget {
     height: 0px !important;
     width: 100% !important;
@@ -743,7 +785,10 @@
         .current-prices-info .ethereum-price-widget div div a {
           display: none !important; }
   .current-prices-info .current-btc-prices p {
-    margin-bottom: -10px !important; }
+    margin-bottom: -10px !important;
+    font-family: UniSansW01-Regular, "Blinker", sans-serif !important;
+    color: #0d1120;
+    font-wei: 600; }
   .current-prices-info .current-btc-prices span {
     display: block; }
   .current-prices-info .btcwdgt {
@@ -939,30 +984,27 @@
       text-decoration: none; }
 
 #about-us {
+  padding-top: 100px;
   background: #f2f2f2; }
   #about-us .about-us-main {
     margin-bottom: 30px; }
-    #about-us .about-us-main p {
-      color: #131926;
-      font-weight: 300;
-      font-size: 18px;
-      line-height: 30px; }
   #about-us hr {
     background: #131926;
     width: 40%;
     height: 2px; }
 
 #about-us-vission {
-  padding-top: 100px;
   background: #0d1120; }
-  #about-us-vission .about-us-main h2 {
-    font-size: 30px;
-    text-transform: uppercase;
-    padding-bottom: 20px;
-    color: #2b7a78; }
-  #about-us-vission .about-us-main p {
-    line-height: 28px;
-    color: #aaa; }
+  #about-us-vission .about-us-main {
+    margin-top: 100px; }
+    #about-us-vission .about-us-main h2 {
+      font-size: 30px;
+      text-transform: uppercase;
+      padding-bottom: 20px;
+      color: #2b7a78; }
+    #about-us-vission .about-us-main p {
+      line-height: 28px;
+      color: #aaa; }
 
 #about-us-vision {
   padding: 100px;
@@ -1209,14 +1251,13 @@
     line-height: 28px; }
 
 #bg-referral {
-  background: url("../img/faq/Faq.jpg") no-repeat center center;
+  background: #0d1120 url("../img/referral/referer2.png") no-repeat center center;
   background-size: cover;
   width: 100%;
-  height: 40vh;
+  height: 500px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  clip-path: polygon(100% 0px, 100% 80%, 52% 80%, 50% 91%, 48% 80%, 0px 80%, 0px 0px); }
+  justify-content: center; }
   #bg-referral .contents-message h1 {
     color: #2b7a78;
     font-weight: bold; }
@@ -1227,23 +1268,11 @@
       text-decoration: none; }
 
 .ref {
-  background: #fff;
-  margin-top: -150px;
-  padding-top: 200px;
-  padding-bottom: 100px; }
+  background: #eee; }
   .ref img {
     text-align: center;
     display: block;
     margin: 0 auto; }
-  .ref .ref-main-main h1 {
-    font-size: 35px;
-    color: #0d1120;
-    font-weight: 700;
-    text-transform: uppercase; }
-  .ref .ref-main-main p {
-    color: rgba(13, 17, 32, 0.8);
-    font-weight: 400;
-    line-height: 28px; }
 
 .refsteps {
   position: relative;
@@ -1273,13 +1302,14 @@
 
 #bg-contact {
   background: #0d1120;
-  background: url("../img/contact/contact.png") no-repeat center center #0d1120;
+  background: url("../img/contact/Flower.png") no-repeat center center #0d1120;
   background-size: cover;
   width: 100%;
-  height: 500px;
+  height: 65vh;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  clip-path: polygon(100% 0px, 100% 80%, 52% 80%, 50% 91%, 48% 80%, 0px 80%, 0px 0px); }
   #bg-contact .contents-message h1 {
     color: #2b7a78;
     font-weight: bold; }

@@ -169,14 +169,14 @@
 // =========================================================
 #home-about-page{
   margin-top: -80px;
-  padding-top: 200px;
+  padding-top: 250px;
   padding-bottom: 100px;
   .info{
     &-head{
       margin-bottom:2opx;
       h1{font-size:35px;font-weight:bold;color:$color-1;text-transform:uppercase;} 
     }
-    p{font-weight:300;color:$color-1;line-height:28px;}
+    p{}
        a.btn.bttn-stretch.bttn-md.bttn-primary{color:$color-1!important;font-weight:bold;padding: 5px 0;margin-top:15px;}
   }
 }
@@ -314,12 +314,12 @@
   #sync2 .item {background: #C9C9C9;padding: 10px 10px 9px 0px;margin: 5px;border-radius: 3px;text-align: center;cursor: pointer;display: flex;}
   #sync2 .item img{width: 50px; height: 50px;margin:10px;opacity: .6; -webkit-filter: grayscale(100%) brightness(0%);transition: all .9s ease;}
   #sync2 .item .topic{text-align:left;}
-  #sync2 .item .topic h1 {font-size: 19px;color:$color-1;font-weight: 600}
+  #sync2 .item .topic h3 {font-size: 19px;color:$color-1;font-weight: 600}
   #sync2 .item .topic p{font-size: 14px;color:$color-2;line-height: 23px;}
   #sync2 .item i.fa.fa-angle-right{font-size: 60px;margin: auto 10px;display:none}
   #sync2 .current .item {
     background: $color-1;
-    h1{color:$color-7;font-weight: 600}
+    h3{color:$color-7;font-weight: 600}
     p{color:$color-4}
     i.fa.fa-angle-right{display:inline;color:$color-7}
     img{opacity: 1;transition: all .9s ease;-webkit-filter: grayscale(0) brightness(100%);}
@@ -478,7 +478,7 @@ background: $color-1;
   &:last-child{border:none!important;}
 }
 .current-prices-info{
-  p{color:$color-1; font-weight:700}
+  p{color:$color-1; font-weight:500;font-family:UniSansW01-Regular,'Blinker', sans-serif!important;}
     .ethereum-price-widget{
         height: 0px!important;
         width: 100%!important;
@@ -508,7 +508,7 @@ background: $color-1;
                         font-weight: 400 !important;
                          font-family:UniSansW01-Regular!important;
                         &:last-child{display: none!important}
-                    }
+                    }//
          }
                 .sparkline{display: none!important}
                 .epw-pair{display: none!important}
@@ -517,7 +517,7 @@ background: $color-1;
     }    
    }
    .current-btc-prices{
-     p{margin-bottom: -10px !important;}
+     p{margin-bottom: -10px !important; font-family:UniSansW01-Regular,'Blinker', sans-serif!important;color:$color-1;font-wei:600}
     span{display: block;}
   }
   .btcwdgt{color:$color-7!important;}

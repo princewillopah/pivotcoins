@@ -66,8 +66,8 @@
 
         a.gflag.nturl img{display:none!important;}
         ul li.nav-item a.navlink{display:none;}
-        ul li.nav-item select{background: transparent;color: #aaa;width: 50%;border:transparent;font-weight:600}
-        ul li.nav-item select option{background: #0d1120;;color: #aaa;width: 50%;border:transparent;font-weight:600}
+        ul li.nav-item select{background: transparent;color: #aaa;width: 50%;border:transparent;font-weight:300;font-family: 'Blinker', sans-serif!important;}
+        ul li.nav-item select option{background: #0d1120;color: #aaa;width: 50%;border:transparent;font-weight:300;font-family: 'Blinker', sans-serif!important;}
     </style>
     {{-- <script>
         TxtType.prototype.tick = function() {
@@ -263,7 +263,7 @@
     </div>
     <!--============================ nav bar =============================================-->
     <section id="navbar">
-        <nav class="navbar navbar-expand-lg nav-color">
+        <nav class="navbar navbar-expand-lg nav-color ">
             <div class="container">
                 <a class="navbar-brand" href="#">
 
@@ -317,12 +317,12 @@
 {{--//////////////////////////////////////////////////////////////////////////////////////////////////--}}
 {{---------------------------- footer -------------------------------------------------------------}}
 
-<section class="get-started sections">
+<section class="get-started sections-white">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="head">
-                    <h1>Get started today with pivotcoins</h1>
+                    <h2>Get started today with pivotcoins</h2>
                     <p>Join the 5,000+ investors and start making money now</p>
                 </div>
                 <div class="bbtn">

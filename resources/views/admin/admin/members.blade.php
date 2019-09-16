@@ -67,7 +67,7 @@ Investors
                                               <td>{{$user->lastname}}</td>
                                               {{-- <td>{{$user->lastname}}</td> --}}
                                               {{-- <td>{{$user->}}</td> --}}
-                                              <td><a href="{{route('admin.show',$user->id)}}" class="btn btn-outline-secondary  btn-sm  float-right  mr-1" title="view" ><i class="fa fa-th"></i> View</a></td>
+                                              <td><a href="{{route('members.show',$user->id)}}" class="btn btn-outline-secondary  btn-sm  float-right  mr-1" title="view" ><i class="fa fa-th"></i> View</a></td>
                                               {{-- <td><a href="" class="btn btn-outline-secondary  btn-sm  float-right  mr-1" title="edit" ><i class="fa fa-pencil"></i> Edit</a></td> --}}
                                               <td><button class="btn btn-outline-secondary btn-sm mr-1" title="delete" data-toggle="modal" data-target="#deleteuserModal-{{$user->id}}"><i class="fa fa-trash"></i> Delete</button></td> 
                                           </tr>

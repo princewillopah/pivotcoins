@@ -19,7 +19,7 @@
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="{{route('home')}}">Dashboard</a></li>
-                        <li class="breadcrumb-item"><a href="{{route('admin.index')}}">All Investors</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('members.index')}}">All Investors</a></li>
                         <li class="breadcrumb-item active">{{$user->name}} {{$user->lastname}}</li>
                         </ol>
                     </div>
@@ -95,7 +95,7 @@
                         <tr>
                             <td><span class="event-text" >Tatal Deposits: </span></td>
                             <td>{{$user->next_of_kin->phone}}</td>
-                            <td> <a href="{{route('alldeposite',[$user->id,$user->next_of_kin->id])}}" class="btn btn-sm btn-outline-secondary">View Deposits</a></td>
+                            <td> <a href="{{route('member.deposit.index',$user->id)}}" class="btn btn-sm btn-outline-secondary">View Deposits</a></td>
                         </tr>
                        <tr>
                           <td><span class="event-text" >Total Withdrwals: </span></td>
@@ -134,7 +134,7 @@
                         </table>
                       </div> 
                     @else
- fuck you
+ not filled
                     @endif
                   
 

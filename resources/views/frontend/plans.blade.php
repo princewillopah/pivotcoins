@@ -32,7 +32,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="ref-main-main">
-                          <h1>Get An Extra 5% In</h1>
+                          <h2>Get An Extra 5% In</h2>
                           <p>Here in Pivotcoins, we offers a transparent mechanism for attracting investments and making profits. 
                              Our expert group assumes only those obligations that we are able to fulfill, 
                              therefore your profit is guaranteed, as well as the safety of your investments.
@@ -60,8 +60,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="head">
-                        <h1>Our Plans</h1>
-                        <img src="img/generics/icon/header-gray.png" alt=""><br>
+                        <h2>Our Plans</h2>
+                        {{-- <img src="img/generics/icon/header-gray.png" alt=""><br> --}}
                         <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p> -->
                     </div>
                 </div>

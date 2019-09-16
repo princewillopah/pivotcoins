@@ -28,7 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/next-of-kin/create';
+    protected $redirectTo = '/home';
     // protected $redirectTo = route('next-of-kin.create');
     /**
      * Create a new controller instance.
@@ -54,7 +54,7 @@ class RegisterController extends Controller
             'walletId' => ['required', 'string', 'max:255'],
             'email'    => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:6', 'confirmed'],
-            'image'    => ['sometimes','file','image','max:5000'],
+            // 'photo'    => ['sometimes','file','image','max:5000'],
         ]);
     }
     
@@ -71,9 +71,9 @@ class RegisterController extends Controller
             'lastname'    => $data['lastname'],
             'email'       => $data['email'],
             'walletId'    => $data['walletId'],
-            'photo'       => $data['photo'],
+            // 'photo'       => $data['photo'],
             'phone'       => $data['phone'],
-            'email'       => $data['address'],
+            // 'address'       => $data['address'],
             'password'    => Hash::make($data['password']),
         ]);
     }

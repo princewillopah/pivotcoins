@@ -28,11 +28,11 @@
             <div class="row">
             
                     <div class="col-md-6">
-                        <img src="img/referral/employee-referral.jpg" class="img-fluid " alt="">
+                        <img src="img/referral/StaffReferers-min.gif" class="img-fluid " alt="">
                     </div>
                     <div class="col-md-6">
-                        <div class="ref-main-main">
-                            <h1>Get An Extra 5% Income</h1>
+                        <div class="sections">
+                            <h2>Get An Extra 5% Income</h2>
                             <p>Yes! You stand the chance of making an extra 5% for every 
                                 referral you make.  We pay 5% commission from any investment
                                 made by your referred person. Refer your family members,friends,

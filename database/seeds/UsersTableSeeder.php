@@ -20,7 +20,7 @@ class UsersTableSeeder extends Seeder
             'walletId'     => 'yfytfyfffghcfhcvgvcghcghghcghhgcghghcghcghnhg',
             'photo'        => 'uploads/placeholders/avatar.png',
             'phone'        => '+12344334455',
-            'address'      => '12 okorogro street ajegunle lagos',
+            // 'address'      => '12 okorogro street ajegunle lagos',
         ]);
         $user2 = App\User::create([
             'name'         => 'prince',
@@ -31,7 +31,7 @@ class UsersTableSeeder extends Seeder
             'walletId'     => 'yfytfyfffghcfhcvgvcghcghghcghhgcghghcghcghnhg',
             'photo'        => 'uploads/placeholders/avatar.png',
             'phone'        => '+1344334455',
-            'address'      => '78 okorogro street ajegunle lagos',
+            // 'address'      => '78 okorogro street ajegunle lagos',
         ]);
         $user3 = App\User::create([
             'name'         => 'john',
@@ -42,7 +42,7 @@ class UsersTableSeeder extends Seeder
             'walletId'     => 'yfytfyfffghcfhcvgvcghcghghcghhgcghghcghcghnhg',
             'photo'        => 'uploads/placeholders/avatar.png',
             'phone'        => '+42344334455',
-            'address'      => '45 okorogro street ajegunle lagos',
+            // 'address'      => '45 okorogro street ajegunle lagos',
         ]);
         $user4 = App\User::create([
             'name'         => 'drake',
@@ -53,7 +53,7 @@ class UsersTableSeeder extends Seeder
             'walletId'     => 'yfytfyfffghcfhcvgvcghcghghcghhgcghghcghcghnhg',
             'photo'        => 'uploads/placeholders/avatar.png',
             'phone'        => '+72344334455',
-            'address'      => '76 okorogro street ajegunle lagos',
+            // 'address'      => '76 okorogro street ajegunle lagos',
         ]);
       
         

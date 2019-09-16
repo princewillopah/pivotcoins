@@ -1,7 +1,15 @@
+
+
+
 @import "generics/colors";
 @import "generics/headings";
 @import "generics/others";
 @import "generics/animations";
+
+body{
+    p{font-family:'Rubik','Heebo', sans-serif;color:rgba(0,0,0,.6);font-weight:300;line-height:28px;}
+    // h2{font-family:'Rubik','Heebo', sans-serif;}
+} 
 
 @import "commonLayouts/header";
 @import "commonLayouts/footer";
@@ -16,4 +24,6 @@
 @import "pages/plans";
 @import "pages/sign-in";
 @import "pages/sign-up";
+
+
 

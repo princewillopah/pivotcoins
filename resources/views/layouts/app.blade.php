@@ -61,7 +61,7 @@
                             <!-- {{ config('app.name', 'Laravel') }} -->
                             <picture>
                                     <source srcset="img/generics/logo/PivotcoinsThickThinReversed-small.png"  media="(max-width:400px)">
-                                    <img src="img/generics/logo/PivotcoinsThickThinReversed-large.png"  class="" alt="">
+                                    <img src="{{asset('img/generics/logo/PivotcoinsThickThinReversed-large.png')}}"  class="" alt="">
                             </picture>
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">

@@ -121,44 +121,54 @@ Register
                 <div class="sign-in-main" >
                     <div class="contact-form" >
                         <h3 class="">Create An Account</h3>
-                        <p class="">
+                        {{-- <p class="">
                             Sign up to start your investements
-                        </p>
-                        <form action="{{ route('register') }}" method="POST">
+                        </p> --}}
+                        <form action="{{ route('register') }}" method="POST" >
                         @csrf
-                            <div class="form-wrapper-outer">
+                  
 
                                 
-                        <div class="form-group">
-                            <label for="name" class="col-form-label text-md-right">{{ __('First Name') }}</label>
-                            <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-                            @error('name')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                        </div>
+                                <div class="form-group">
+                                    <label for="name" class="col-form-label text-md-right">{{ __('First Name') }}</label>
+                                    <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                    @error('name')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+ 
+                                <div class="form-group">
+                                    <label for="lastname" class="col-form-label text-md-right">{{ __('Last Name') }}</label>
+                                    <input id="lastname" type="text" class="form-control @error('lastname') is-invalid @enderror" name="lastname" value="{{ old('lastname') }}" required autocomplete="lastname" autofocus>
+                                    @error('lastname')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
 
-                        <div class="form-group">
-                                <label for="lastname" class="col-form-label text-md-right">{{ __('Last Name') }}</label>
-                                <input id="lastname" type="text" class="form-control @error('lastname') is-invalid @enderror" name="lastname" value="{{ old('lastname') }}" required autocomplete="lastname" autofocus>
-                                @error('lastname')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
+                                <div class="form-group">
+                                    <label for="walletId" class="col-form-label text-md-right">{{ __('Bitcoin Wallet') }}</label>
+                                    <input id="walletId" type="text" class="form-control @error('walletId') is-invalid @enderror" name="walletId" value="{{ old('walletId') }}" required autocomplete="walletId" autofocus>
+                                    @error('walletId')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
 
-                            <div class="form-group">
-                             <label for="email" class="col-form-label text-md-right">{{ __('Email') }}</label>
-                                
-                                <input id="email" type="email" class="form-control  @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
+                                <div class="form-group">
+                                 <label for="email" class="col-form-label text-md-right">{{ __('Email') }}</label>
+                                    
+                                    <input id="email" type="email" class="form-control  @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                    @error('email')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
 
                                 <div class="form-group">
                                    <label for="password" class="col-form-label text-md-right">{{ __('Password') }}</label>
@@ -176,7 +186,20 @@ Register
                                      <input id="password-confirm" class="form-control" type="password"  name="password_confirmation" required autocomplete="new-password">
                                </div>
 
-                            </div>
+                                <div class="form-group">
+                                    <label for="phone" class="col-form-label text-md-right">{{ __('Phone Number') }}</label>
+                                    <input id="phone" type="text" class="form-control" name="phone" value="{{ old('phone') }}" autocomplete="phone" >
+                                </div>
+                              {{--  <div class="form-group">
+                                        <label for="photo">Cover Image:</label>
+                                        <div class="input-group">
+                                            <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="phpto" name="photo">
+                                            <label class="custom-file-label" for="photo">Choose file</label>
+                                            </div>
+                                        </div>
+                                </div> --}}
+
                             <button type="submit" class="btn rounded-0 form-submit w-25 bttn-fill bttn-md bttn-primary" name="submit">Sign Up</button>
                            <p class="signupMsg">Already have an account? <span><a href="{{route('login')}}">Sign In here</a></span></p>
                         </form>

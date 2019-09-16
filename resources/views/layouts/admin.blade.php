@@ -66,7 +66,11 @@
       <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
           {{-- <i class="fa fa-user"></i> --}}
-          <img src="{{asset('admin3/dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" width="30px" height="30px" alt="User Image">
+          @if(is_null(Auth::user()->photo))
+          <img src="{{asset('uploads/person1.png')}}" class="img-circle elevation-2" width="30px" height="30px" alt="{{ Auth::user()->name }}">
+         @else
+          <img src="{{asset('uploads/'.Auth::user()->photo)}}" class="img-circle elevation-2" width="30px" height="30px" alt="{{ Auth::user()->name }}">
+         @endif
           <span class="pl-2" > {{ Auth::user()->name }}</span>
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
@@ -82,6 +86,11 @@
             {{-- <span class="float-right text-muted text-sm">12 hours</span> --}}
           </a>
           <div class="dropdown-divider"></div>
+          <div class="dropdown-divider"></div>
+          <a href="{{ route('profile')}}" class="dropdown-item py-3">
+            <i class="fa fa-user mr-2"></i> Profile
+            {{-- <span class="float-right text-muted text-sm">12 hours</span> --}}
+          </a>
           <a href="{{ route('logout') }}" class="dropdown-item py-3"
                     onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">       
@@ -124,7 +133,11 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="{{asset('admin3/dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
+          @if(is_null(Auth::user()->photo))
+          <img src="{{asset('uploads/person1.png')}}" class="img-circle elevation-2" width="30px" height="30px" alt="{{ Auth::user()->name }}">
+         @else
+          <img src="{{asset('uploads/'.Auth::user()->photo)}}" class="img-circle elevation-2" width="30px" height="30px" alt="{{ Auth::user()->name }}">
+         @endif
         </div>
         <div class="info">
           <a href="#" class="d-block">{{ Auth::user()->name }} (<span style="color:teal">Admin</span> )</a>
@@ -146,7 +159,7 @@
             </a>
           </li>
           <li class="nav-item">
-              <a href="{{route('admin.index')}}" class="nav-link   {{(request()->is('admin'))?'active':''}}">
+              <a href="{{route('members.index')}}" class="nav-link   {{(request()->is('members'))?'active':''}}">
                 <i class="nav-icon fa fa-th"></i>
                 <p>
                   All Investors
@@ -227,7 +240,7 @@
 
   
   <footer class="main-footer text-center">
-  <strong>Copyright &copy; 2019 <a href="{{route('home')}}">Deeperlife Church Greensboro, NC</a>.</strong>
+  <strong>Copyright &copy; 2019 <a href="{{route('home')}}"> Pivotcoins</a></strong>
   </footer>
 
   <!-- Control Sidebar -->

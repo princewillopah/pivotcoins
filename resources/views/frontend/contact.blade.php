@@ -12,6 +12,8 @@
                 <div class="col-md-12">
                     <div class="contents">
                         <div class="contents-message">
+                            
+                            <p>Ask a question—we’re all ears!</p>
                             <h1 class="cssanimation leFadeInLeft sequence">Contact us</h1>
                             <div class="wow fadeInUp">
                                 <span class="sub">Take a tour with us</span>

@@ -26,16 +26,16 @@ $(document).ready(function(){
 
    // -----------sticky nav -----------------------------------------------------------
 
-   $(window).scroll(function () {
-    if($(this).scrollTop() > 400 ){
-        //
-        $("#navbar nav").fadeIn(1000).addClass('fixed-top').addClass('sticky');
-        // $("#navbar .navbar .navbar-brand img").addClass('my-logo');
-    }
-    else if($(this).scrollTop() > 250 ){
-        $("#navbar nav").removeClass('fixed-top').removeClass('sticky');
-        // $("#navbar .navbar .navbar-brand img").removeClass('my-logo');
-    }
+//    $(window).scroll(function () {
+//     if($(this).scrollTop() > 400 ){
+//         //
+//         $("#navbar nav").fadeIn(1000).addClass('fixed-top').addClass('sticky');
+//         // $("#navbar .navbar .navbar-brand img").addClass('my-logo');
+//     }
+//     else if($(this).scrollTop() > 250 ){
+//         $("#navbar nav").removeClass('fixed-top').removeClass('sticky');
+//         // $("#navbar .navbar .navbar-brand img").removeClass('my-logo');
+//     }
 });
 // -----------end sticky nav -----------------------------------------------------------
 

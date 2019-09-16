@@ -6,7 +6,22 @@
   .head{
     text-align: center;
     margin-bottom: 50px;
-    h1{font-size: 35px;font-weight: bold;text-transform: uppercase; color: $color-1}
-    p{font-style: italic;color: $color-6;font-weight: 500;}
+    h2{font-size: 30px;font-weight: 600;text-transform: uppercase; color: rgba($color-4,.9);font-family: 'Blinker', sans-serif!important;}
+    p{color: $color-6;font-weight: 500;}
+  }
+} // font-family: 'Blinker', sans-serif!important;
+.sections-white{
+  padding: 100px 20px;
+  //text-align: center;
+  .head{
+    text-align: center;
+    margin-bottom: 50px;
+    h2{font-size: 30px;font-weight: 600;text-transform: uppercase; color: rgba($color-1,.9);font-family: 'Blinker', sans-serif!important;}
+    p{color: $color-6;font-weight: 500;}
   }
 }
+
+// .subhead{
+  h3{font-size: 20px;font-weight: 600;text-transform: uppercase; color: rgba($color-4,.6);font-family: 'Blinker', sans-serif!important;}
+// }
+h2{font-size: 30px;font-weight: 600;text-transform: uppercase; color: rgba($color-1,.8);font-family: 'Blinker', sans-serif!important;}

@@ -29,12 +29,12 @@
                                     <div class="col-md-12">
                                         <!-- <div class="caption" id="caption1"> -->
                                         <div class="caption-inner">
-                                            <h1 class="animated fadeInRight"  data-animation="fadeInRight" data-delay="300ms" style="animation-delay: 300ms">Your Pathway To Financial Stability</h1>
-                                            <p class="  animated fadeInUp"  data-wow-delay=".1s" data-wow-duration=".2s">Join Pivotcoins today and move your business to a newer level
+                                            <h1 class="wow animated fadeInRight"  data-animation="fadeInRight" data-delay="300ms" style="animation-delay: 300ms">Your Pathway To Financial Stability</h1>
+                                            <p class=" wow animated fadeInUp"  data-wow-delay=".1s" data-wow-duration=".2s">Join Pivotcoins today and move your business to a newer level
                                             </p>
                                             <!-- <a href="sign-up.php" class="btn wow fadeInUp"  data-wow-delay=".2s" data-wow-duration=".3s">Join Now</a> -->
                                         </div>
-                                        <a href="sign-up.php" class="btn animated fadeInUp"  data-wow-delay=".3s" data-wow-duration=".4s">Join Now</a>
+                                        <a href="sign-up.php" class="btn wow animated fadeInUp"  data-wow-delay=".3s" data-wow-duration=".4s">Join Now</a>
                                         <!-- </div> -->
                                     </div>
                                 </div>
@@ -51,10 +51,10 @@
                                     <div class="col-md-12">
                                         <div class="caption" id="caption2">
                                             <div class="caption-inner">
-                                                <h1 class="pb-1 animated fadeInLeft" id="caption-title2" data-animation="fadeInLeft" data-delay="500ms" style="animation-delay: 500ms" >A platform that facilitates choice, simplicity and performance.</h1>
-                                                <p class="animated fadeInRight" id="caption-para2" data-animation="fadeInRight" data-delay="700ms" style="animation-delay: 700ms">All these are backed by caring experts so that you stay focused on what you do best, win as an individual and succeed as a investor..
+                                                <h1 class="pb-1 wow animated fadeInUp" id="caption-title2" data-animation="fadeInLeft" data-delay="500ms" style="animation-delay: 500ms" >A platform that facilitates choice, simplicity and performance.</h1>
+                                                <p class="animated wow fadeInUp" id="caption-para2" data-animation="fadeInRight" data-delay="700ms" style="animation-delay: 700ms">All these are backed by caring experts so that you stay focused on what you do best, win as an individual and succeed as a investor..
                                                 </p>
-                                                <a href="sign-up.php" class="btn animated fadeInUp"  data-wow-delay=".5s" data-wow-duration=".4s">Join Now</a>
+                                                <a href="sign-up.php" class="btn wow animated fadeInUp"  data-wow-delay=".5s" data-wow-duration=".4s">Join Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -72,10 +72,10 @@
                                     <div class="col-md-12">
                                         <div class="caption" >
                                             <div class="caption-inner">
-                                                <h1 class="pb-1 animated fadeInUp" id="caption-title4" data-animation="fadeInUp" data-delay="500ms" style="animation-delay: 500ms" >Invest For What Really Matters</h1>
-                                                <p class="animated fadeInUp" id="caption-para4" data-animation="fadeInUp" data-delay="700ms" style="animation-delay: 700ms">Whether you're new to investing or a seasoned pro, it's time to partner with a company that believes you could and should be getting more from your money.
+                                                <h1 class="pb-1 wow animated fadeInUp" id="caption-title4" data-animation="fadeInUp" data-delay="500ms" style="animation-delay: 500ms" >Invest For What Really Matters</h1>
+                                                <p class="animated wow fadeInUp" id="caption-para4" data-animation="fadeInUp" data-delay="700ms" style="animation-delay: 700ms">Whether you're new to investing or a seasoned pro, it's time to partner with a company that believes you could and should be getting more from your money.
                                                 </p>
-                                                <a href="sign-up.php" class="btn animated fadeInUp"  data-wow-delay=".5s" data-wow-duration=".4s">Join Now</a>
+                                                <a href="sign-up.php" class="btn wow animated fadeInUp"  data-wow-delay=".5s" data-wow-duration=".4s">Join Now</a>
 
                                             </div>
                                         </div>
@@ -94,10 +94,10 @@
                                     <div class="col-md-12">
                                         <div class="caption " id="caption1">
                                             <div class="caption-inner">
-                                                <h1 class="pb-1 animated fadeInUp" id="caption-title2" data-animation="fadeInLeft" data-delay="500ms" style="animation-delay: 500ms" >A Smarter Way To Create Your Furtune</h1>
-                                                <p class="animated fadeInUp" id="caption-para2" data-animation="fadeInRight" data-delay="700ms" style="animation-delay: 700ms">Relax while the Experts help you achieve the life style you want
+                                                <h1 class="pb-1 wow animated fadeInUp" id="caption-title2" data-animation="fadeInLeft" data-delay="500ms" style="animation-delay: 500ms" >A Smarter Way To Create Your Furtune</h1>
+                                                <p class="animated wow fadeInUp" id="caption-para2" data-animation="fadeInRight" data-delay="700ms" style="animation-delay: 700ms">Relax while the Experts help you achieve the life style you want
                                                 </p>
-                                                <a href="sign-up.php" class="btn animated fadeInUp"  data-wow-delay=".5s" data-wow-duration=".4s">Join Now</a>
+                                                <a href="sign-up.php" class="btn wow animated fadeInUp"  data-wow-delay=".5s" data-wow-duration=".4s">Join Now</a>
 
                                             </div>
                                         </div>
@@ -116,10 +116,10 @@
                                     <div class="col-md-12">
                                         <div class="caption" >
                                             <div class="caption-inner">
-                                                <h1 class="pb-1 animated fadeInRight" id="caption-title4" data-animation="fadeInRight" data-delay="500ms" style="animation-delay: 500ms" >Invest For What Really Matters</h1>
-                                                <p class="animated fadeInLeft" id="caption-para4" data-animation="fadeInLeft" data-delay="700ms" style="animation-delay: 700ms">Whether you're new to investing or a seasoned pro, it's time to partner with a company that believes you could and should be getting more from your money.
+                                                <h1 class="pb-1 wow animated fadeInUp" id="caption-title4" data-animation="fadeInRight" data-delay="500ms" style="animation-delay: 500ms" >Invest For What Really Matters</h1>
+                                                <p class=" wow animated fadeInUp" id="caption-para4" data-animation="fadeInLeft" data-delay="700ms" style="animation-delay: 700ms">Whether you're new to investing or a seasoned pro, it's time to partner with a company that believes you could and should be getting more from your money.
                                                 </p>
-                                                <a href="sign-up.php" class="btn animated fadeInUp"  data-wow-delay=".5s" data-wow-duration=".4s">Join Now</a>
+                                                <a href="sign-up.php" class="btn wow animated fadeInUp"  data-wow-delay=".5s" data-wow-duration=".4s">Join Now</a>
 
                                             </div>
                                         </div>
@@ -268,7 +268,7 @@
                 <div class="col-md-6">
                     <div class="info">
                         <div class="info-head">
-                            <h1>About Pivotcoins</h1>
+                            <h2>About Pivotcoins</h2>
                         </div>
                         <p>Pivotcoins, is a private investment company focused on companies in high growth areas
                             or high growth opportunities in mature industries. We provide investment-brokerage
@@ -292,8 +292,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="head">
-                        <h1>Why potential investors Choose Pivotcoins</h1>
-                        <img src="img/generics/icon/header-gray.png" alt=""><br>
+                        <h2>Why potential investors Choose Pivotcoins</h2>
+                        {{-- <img src="img/generics/icon/header-gray.png" alt=""><br> --}}
                         <!-- <img src="img/generics/icon/header-green.png" alt=""><br>
                         <img src="img/generics/icon/header-red.png" alt=""> <br>
                         <img src="img/generics/icon/header-blue.png" alt=""> <br> -->
@@ -383,8 +383,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="head">
-                        <h1>Our Plans</h1>
-                        <img src="img/generics/icon/header-gray.png" alt=""><br>
+                        <h2>Our Plans</h2>
+                        {{-- <img src="img/generics/icon/header-gray.png" alt=""><br> --}}
                         <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p> -->
                     </div>
                 </div>
@@ -525,13 +525,13 @@
     <!-- ==================================================== -->
     <!-- STEPS -->
     <!-- ==================================================== -->
-    <section class="steps sections" >
+    <section class="steps sections-white" >
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="head">
-                        <h1>Three Simple Steps</h1>
-                        <img src="img/generics/icon/header-green.png" alt=""><br>
+                        <h2>Three Simple Steps</h2>
+                        {{-- <img src="img/generics/icon/header-green.png" alt=""><br> --}}
                         <!-- <p>Just these few steps, you are set</p> -->
                     </div>
                 </div>
@@ -542,7 +542,7 @@
                             <div class="item">
                                 <img src="img/generics/icon/sign-up.png" alt="">
                                 <div class="topic">
-                                    <h1>Sign Up</h1>
+                                    <h3>Sign Up</h3>
                                     <p>Sign up for your free pivotcoins account follow our easy process to set up
                                         your profile
                                     </p>
@@ -552,7 +552,7 @@
                             <div class="item">
                                 <img src="img/generics/icon/choose.png" alt="">
                                 <div class="topic">
-                                    <h1>Choose a plan and make deposit</h1>
+                                    <h3>Choose a plan and make deposit</h3>
                                     <p>
                                         Choose your preferred plan and make your deposit. This can be done through methods like
                                         bank transfer, credit card to add money
@@ -564,7 +564,7 @@
                             <div class="item">
                                 <img src="img/generics/icon/yields.png" alt="">
                                 <div class="topic">
-                                    <h1>Start Earnning Profits</h1>
+                                    <h3>Start Earnning Profits</h3>
                                     <p>All Withdrawals are made on weekly base. To make a
                                         withdrawal, you need to fill the withdrawal application
                                         form in your dashboard, indicating the amount you want to withdraw.
@@ -582,7 +582,7 @@
                     <div id="step-main">
                         <div id="sync1" class="owl-carousel owl-theme">
                             <div class="item">
-                                <img class="img-fluid" src="img/home/signup/PNG4.png" alt="">
+                                <img class="img-fluid" src="img/home/signup/phone.png" alt="">
                                 {{-- <h2>Sign Up</h2>
                                 <p>provide the necessary information asked</p>
                                 <p>you wiill be taken to your dashboard where you will find the plans available</p> --}}
@@ -608,7 +608,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="head">
-                        <h1>Bitcoin Tools</h1>
+                        <h2>Bitcoin Tools</h2>
                         <p>Make use of our bitcoin widgets to track your investment from time to time</p>
                     </div>
                 </div>
@@ -679,7 +679,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="head">
-                        <h1>our team</h1>
+                        <h2>our team</h2>
                         {{-- <img src="img/generics/icon/header-gray.png" alt=""><br> --}}
                         <!-- <p>A few of our experts.</p> -->
                     </div>
@@ -763,8 +763,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="head">
-                        <h1>Here’s what our customers have to say</h1>
-                        <img src="img/generics/icon/header-gray.png" alt=""><br>
+                        <h2>Here’s what our customers have to say</h2>
+                        {{-- <img src="img/generics/icon/header-gray.png" alt=""><br> --}}
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -882,7 +882,7 @@
             <div class="row">
                 <div class="col-md-12">
                      <div class="head" >
-                                <h1>What We Accept</h1>                                                                                                                                                                                                                                                                                                                                                                                                                                             
+                                <h2>What We Accept</h2>                                                                                                                                                                                                                                                                                                                                                                                                                                             
                       </div>
                 </div>
                 <div class="col-sm-8 offset-sm-2">

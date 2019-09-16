@@ -43,6 +43,7 @@ tr th{color:#fff}
 
  .bg-danger, .bg-warning, .bg-info, .bg-success{background:#1e1e2f!important;color:#aaa!important;}
  .bg-danger a, .bg-warning a, .bg-info a, .bg-success a{background: #2b7a78!important;color:#fff!important;}
-  .dropdown-menu a.dropdown-item.py-3{background:#1e1e2f!important;color:#aaa;}
- .dropdown-divider{border-bottom:1px solid #2b7a78;border-top: 1px solid #2b7a78}
+  .dropdown-menu a.dropdown-item.py-3{background:#1e1e2f!important;color:#aaa;padding-top: 10px !important;padding-bottom: 10px !important;}
+ .dropdown-divider{border-bottom:1px solid rgba(#2b7a78,.1);border-top: 1px solid #2b7a78}
   .nav-header{color:#2b7a78!important;font-weight:700}
+  div.dataTables_wrapper div.dataTables_info{ color:#aaa!important}

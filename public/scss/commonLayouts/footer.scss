@@ -17,27 +17,28 @@
     padding: 100px 20px 80px;
     .company-logo{margin-bottom:20px;}
     .media {
-      .nav-link{width:40px;height:40px; background: transparent; margin-right: 5px; border-radius: 50%;padding: 5px 0px 5px 10px;border: 2px solid #aaa;transition:all .9s ease;
-        .fa{color:$color-6;font-weight:500;transition:all .9s ease;}
+      .nav-link{width:40px;height:40px; background: #838383; margin-right: 5px; border-radius: 50%;padding: 7px 0px 5px 0px;border: 2px solid #838383;transition:all .9s ease;text-align: center; line-height: 16px;
+        .fa{color:$color-1;font-weight:700;transition:all .9s ease;}
         &:hover{
-          border: 2px solid #fff;transition:all .9s ease;
+          border: 2px solid #838383;transition:all .9s ease;
           .fa{color:$color-7;transition:all .9s ease;}
         }
+        &:hover{background: transparent;}
       }
     }
 
     .main-footer{
-      h5{color:$color-4;font-weight: bold;text-transform: uppercase;font-size: 18px;}
+      h5{color:$color-4;font-weight: bold;text-transform: uppercase;font-size: 16px;font-family:UniSansW01-Regular,'Blinker', sans-serif!important;}
       .abt{
         a{color: #838383;padding: 0 0 7px 0;}
       }
     }
     .main-other{
-      a{color: $color-6;padding: 0 0 7px 0;margin-right: 10px; font-size: 25px}
+      a{color:#838383;padding: 0 0 7px 0;margin-right: 10px; font-size: 25px}
     }
     .main-footer4{color:#838383;
-      .footer-contact{display:flex;margin-bottom:5px;
-        .fa{color:$color-6;margin-right:8px;margin-top: 5px;}
+      .footer-contact{display:flex;margin-bottom:7px;
+        .fa{color:#838383;margin-right:8px;margin-top: 5px;}
         span{font-size: 14px;}
       }
     }
