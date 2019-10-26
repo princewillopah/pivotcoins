@@ -154,7 +154,7 @@
 // ========================================================================================
 //     ----------------------- NEW ---------------------------------------------------
 // ========================================================================================
-
+// security-owl-carousel
 // ----------------------- testimonials ----------------------------------------
 $('.testimonial-owl-carousel').owlCarousel({
     // loop:false,
@@ -175,8 +175,32 @@ $('.testimonial-owl-carousel').owlCarousel({
         }
     }
 });
+// ----------------------- security ----------------------------------------
+// $(document).ready(function() {
+$('.security-owl-carousel').owlCarousel({
+    // loop:false,
+    // items: 1,
+    loop: true,
+    margin: 0,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    center:true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
+        }
+    }
+ });
+// }); 
 
-// ----------------------- testimonials ----------------------------------------
+// ----------------------- signup ----------------------------------------
 $(document).ready(function() {
 
   var sync1 = $("#sync1");

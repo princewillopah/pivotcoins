@@ -186,9 +186,18 @@ Register
                                      <input id="password-confirm" class="form-control" type="password"  name="password_confirmation" required autocomplete="new-password">
                                </div>
 
-                                <div class="form-group">
+                               {{--  <div class="form-group">
                                     <label for="phone" class="col-form-label text-md-right">{{ __('Phone Number') }}</label>
                                     <input id="phone" type="text" class="form-control" name="phone" value="{{ old('phone') }}" autocomplete="phone" >
+                                </div> --}}
+                                 <div class="form-group">
+                                    <label for="phone_number" class="col-form-label text-md-right">{{ __('Phone Number') }}</label>
+                                    <input id="phone_number" type="text" class="form-control @error('phone_number') is-invalid @enderror" name="phone_number" value="{{ old('phone_number') }}" required autocomplete="phone_number" autofocus>
+                                    @error('phone_number')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
                                 </div>
                               {{--  <div class="form-group">
                                         <label for="photo">Cover Image:</label>

@@ -20,9 +20,10 @@
 
              <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i&display=swap" rel="stylesheet">
 
 
 	<!--cdn-->
@@ -47,6 +48,8 @@
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+         <link rel="stylesheet" href="{{asset('css/vendor/responsive.css')}}">
+    @yield('style')
 
 </head>
 <body>

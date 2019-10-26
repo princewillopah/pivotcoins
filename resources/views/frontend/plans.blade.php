@@ -1,5 +1,5 @@
 @extends('layouts.frontend')
-{{-----------------------------------------------------------------}}
+
 @section('title')
     Investment Plan
 @endsection
@@ -12,9 +12,11 @@
                 <div class="col-md-12">
                     <div class="contents">
                         <div class="contents-message">
-                            <h1 class="wow fadeInUp">Investments Plans</h1>
+                            <h1 class="wow fadeInUp">Intelligent Plans<br> For Your Money</h1>
                             <div class="wow fadeInUp">
-                                <span class="sub cssanimation leFadeInLeft sequence"></span>
+                                <span class="sub cssanimation leFadeInLeft sequence">Put your investing ideas into action<br> with a full range of
+                                    investments. Enjoy real benefits and rewards on
+                                    Online Trade.</span>
                             </div>
                         </div>
                     </div>
@@ -28,23 +30,25 @@
             <div class="row">
             
                     <div class="col-md-6">
-                        <img src="img/referral/employee-referral.jpg" class="img-fluid " alt="">
+                        <img src="img/plans/relaxing.png" class="img-fluid " alt="">
                     </div>
                     <div class="col-md-6">
                         <div class="ref-main-main">
-                          <h2>Get An Extra 5% In</h2>
+                          <h2>INVESTMENT WITH NO WORRIES</h2>
                           <p>Here in Pivotcoins, we offers a transparent mechanism for attracting investments and making profits. 
                              Our expert group assumes only those obligations that we are able to fulfill, 
                              therefore your profit is guaranteed, as well as the safety of your investments.
                              We do not define any period of cooperation, and your deposits will work on a 
                              permanent basis, bringing you profits every week. You can make as many deposits 
                              as you need. The minimum deposit is only 10000 USD and there is no maximum limit. 
-                             After creating the deposit and 3 confirmations by the network, the invested amount
-                             will start generating profit every week. The withdrawal of profits becomes available 
-                             once your balance reaches at least 10 USD.
+                             After making the deposit, the invested amount
+                             will start generating profit every week. 
+                             The withdrawal of profits becomes available on weekends. 
                              You will never suffer even the slightest delay of payment once your 
                              withdrawal application is made.
                             </p>  
+                            {{-- <p> 
+                                </p> --}}
                         </div>
                     </div>
                 
@@ -55,14 +59,164 @@
       <!-- ==================================================== -->
     <!-- COUR PLANS -->
     <!-- ==================================================== -->
-    <section id="our-plans" class="sections">
+    <section id="investment-plans" class="sections-white">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-12">
+                <div class="head">
+                    <h2>See our investment plans</h2>
+                    {{-- <p>Choose How You Want to Invest With Us</p> --}}
+                     <p> Our investment plans are divided into three types. Each has its own conditions and advantages.
+                        They all offer weekly accruals. You receive your payouts
+                         at the end of the week. You receive back your principal 
+                         deposit at the end of the investment period.
+                     </p>
+                </div>
+            </div>
+                <div class="col-md-12">
+                    <div class="investment_plan_tab">
+                            <div class="tabs">
+                                    <input type="radio" name="tabs" id="tabone" checked="checked">
+                                    <label for="tabone">Silver Plan</label>
+                                    <div class="tab">
+                                     <div class="row">
+                                         <div class="col-md-4">
+                                           {{-- <h4>Silver Plan</h4> --}}
+                                           <img src="img/plans/3.png" alt="" class="img-fluid">
+                                         </div>
+                                         <div class="col-md-8">
+                                            <table class="table table-hover">
+                                               
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Weekly interest: </td>
+                                                        <td>3%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Minimal investment:</td>
+                                                        <td>$1000</td>                  
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Maximal investment:</td>
+                                                        <td>$5000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Investment term:</td>
+                                                        <td>Forever</td>
+                                                    </tr>
+                                                    <tr>
+                                                            <td>Referral Bonus:</td>
+                                                            <td>5%</td>
+                                                        </tr>
+                                                    <tr >
+                                                        <td colspan="2">All payouts are made on weekends</td> 
+                                                    </tr>
+                                                </tbody>
+                                              </table>
+                                         </div>
+                                     </div>
+                                    </div>
+                                    
+                                    <input type="radio" name="tabs" id="tabtwo">
+                                    <label for="tabtwo">Gold  Plan</label>
+                                    <div class="tab">
+                                        <div class="row">
+                                                <div class="col-md-4">
+                                                    {{-- <h4>Gold Plan</h4> --}}
+                                                    <img src="img/plans/4.png" alt="" class="img-fluid">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <table class="table table-hover">
+                                                        
+                                                        <tbody>
+                                                             <tr>
+                                                                <td>Weekly interest: </td>
+                                                                <td>4%</td>
+                                                                </tr>
+                                                                <tr>
+                                                                <td>Minimal investment:</td>
+                                                                <td>$6000</td>                  
+                                                                </tr>
+                                                                <tr>
+                                                                <td>Maximal investment:</td>
+                                                                <td>$19000</td>
+                                                                </tr>
+                                                                <tr>
+                                                                <td>Investment term:</td>
+                                                                <td>Forever</td>
+                                                                </tr>
+                                                               <tr>
+                                                                    <td>Referral Bonus:</td>
+                                                                    <td>5%</td>
+                                                                </tr>
+                                                               <tr >
+                                                                <td colspan="2">All payouts are made on weekends</td> 
+                                                              </tr>
+                                                        </tbody>
+                                                        </table>
+                                                </div>
+                                            </div>
+                                   </div>
+                                    
+                                    <input type="radio" name="tabs" id="tabthree">
+                                    <label for="tabthree">Diamond Plan</label>
+                                    <div class="tab">
+                                            <div class="row">
+                                                    <div class="col-md-4">
+                                                      {{-- <h4>Diamond Plan</h4> --}}
+                                                      <img src="img/plans/5.png" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                       <table class="table table-hover">
+                                                          
+                                                           <tbody>
+                                                                <tr>
+                                                                    <td>Weekly interest: </td>
+                                                                    <td>5%</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                    <td>Minimal investment:</td>
+                                                                    <td>$20,000</td>                  
+                                                                    </tr>
+                                                                    <tr>
+                                                                    <td>Maximal investment:</td>
+                                                                    <td>No Limit</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                    <td>Investment term:</td>
+                                                                    <td>Forever</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                    </tr>
+                                                                   <tr>
+                                                                       <td>Referral Bonus:</td>
+                                                                       <td>5%</td>
+                                                                   </tr>
+                                                               <tr >
+                                                                   <td colspan="2">All payouts are made on weekends</td> 
+                                                               </tr>
+                                                           </tbody>
+                                                         </table>
+                                                    </div>
+                                                </div>
+                                    </div>
+                                  </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================================================== -->
+    <!-- old plans-->
+    <!-- ==================================================== -->  
+
+    {{-- <section id="our-plans" class="sections">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="head">
                         <h2>Our Plans</h2>
-                        {{-- <img src="img/generics/icon/header-gray.png" alt=""><br> --}}
-                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p> -->
+                     
                     </div>
                 </div>
 
@@ -76,8 +230,7 @@
                             </div>
                             
                             <h2 class="percent">3%</h2>
-                    {{--            <p class="percent-limit">Profit Made Weekly</p>
-                            <p class="invest">$1000 - $5000</p> --}}
+                   
                             <table class="table">
                                 <tbody>
                                     <tr>
@@ -119,8 +272,7 @@
                                 <div class="filledbar"></div>
                             </div>
                             <h2 class="percent">4%</h2>
-                            {{-- <p class="percent-limit">Profit Made Weekly</p>
-                            <p class="invest">$6000 - $19000</p> --}}
+                           
                             <table class="table">
                                 <tbody>
                                     <tr>
@@ -162,8 +314,7 @@
                                 <div class="filledbar"></div>
                             </div>
                             <h2 class="percent">5%</h2>
-                            {{-- <p class="percent-limit">Profit Made Weekly</p>
-                            <p class="invest">$20,000 and above</p> --}}
+                           
                             <table class="table">
                                 <tbody>
                                     <tr>
@@ -198,7 +349,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
        <!-- ==================================================== -->
     <!-- OUR CALCULATOR -->
     <!-- ==================================================== -->  

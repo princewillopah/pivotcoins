@@ -21,9 +21,8 @@ class CreateUsersTable extends Migration
             $table->string('walletId');//
             $table->string('password');
             $table->string('email');
-            // $table->string('photo')->nullable()->default('person1.png');//
-            $table->string('phone')->nullable();//
-            // $table->string('address')->nullable();//
+            $table->string('photo')->nullable()->default('person1.png');//
+            $table->string('phone_number')->default('+1 435 456 4556');
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->timestamps();

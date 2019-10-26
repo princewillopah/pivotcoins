@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+ Password Reset
+@endsection
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -44,4 +48,23 @@
         </div>
     </div>
 </div>
+@endsection
+
+@section('style')
+     <style>
+        
+body{background: #27293d;}
+
+.container .col-md-8{
+    margin:150px auto 200px
+}
+.container .col-md-8 .card{background:#0d1120; }
+.card .card-header{ color: #aaa}
+.col-form-label{color: #aaa;}
+.card .btn{color:teal;transition:.9s all ease;background: transparent;border:1px solid teal}
+.card .btn:hover{background: teal;
+    color:#0d1120;transition:.9s all ease }
+.form-control{background: transparent;color: #aaa;}
+footer .copyright{color: #aaa}
+     </style>
 @endsection

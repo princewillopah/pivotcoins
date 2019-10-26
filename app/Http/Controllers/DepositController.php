@@ -19,33 +19,33 @@ class DepositController extends Controller
     }
 
     
-    public function create()
-    {
-        //
-    }
+    // public function create()
+    // {
+    //     //
+    // }
 
    
-    public function store(Request $request)
-    {
-        //
-    }
+    // public function store(Request $request)
+    // {
+    //     //
+    // }
 
    
-    public function show(Deposit $deposit)
-    {
-        //
-    }
+    // public function show(Deposit $deposit)
+    // {
+    //     //
+    // }
 
-    public function edit(Deposit $deposit)
-    {
-        //
-    }
+    // public function edit(Deposit $deposit)
+    // {
+    //     //
+    // }
 
    
-    public function update(Request $request, Deposit $deposit)
-    {
-        //
-    }
+    // public function update(Request $request, Deposit $deposit)
+    // {
+    //     //
+    // }
 
   
     public function destroy(Deposit $deposit)

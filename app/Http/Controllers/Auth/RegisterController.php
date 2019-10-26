@@ -3,6 +3,10 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\Balance;
+use App\Withdrawal;
+use App\Nextofkin;
+use App\Deposit;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -54,7 +58,8 @@ class RegisterController extends Controller
             'walletId' => ['required', 'string', 'max:255'],
             'email'    => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:6', 'confirmed'],
-            // 'photo'    => ['sometimes','file','image','max:5000'],
+            'phone_number'   => ['required','string'],
+            // 'photo'    => ['sometimes','string','image','max:5000'],
         ]);
     }
     
@@ -66,15 +71,44 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name'        => $data['name'],
-            'lastname'    => $data['lastname'],
-            'email'       => $data['email'],
-            'walletId'    => $data['walletId'],
-            // 'photo'       => $data['photo'],
-            'phone'       => $data['phone'],
-            // 'address'       => $data['address'],
-            'password'    => Hash::make($data['password']),
-        ]);
+        $user = User::create([
+                    'name'        => $data['name'],
+                    'lastname'    => $data['lastname'],
+                    'email'       => $data['email'],
+                    'walletId'    => $data['walletId'],
+                    'phone_number'=> $data['phone_number'],
+                    'password'    => Hash::make($data['password']),
+                ]);
+
+                // dd($data);
+            // Balance::create([
+            //         'user_id'               => $user->id,
+            //         'balance'               => 0.00,
+            //     ]);
+
+            Deposit::create([
+                    'user_id'                => $user->id,      
+                    'deposit_amount'         =>  0.00, 
+                    'active_deposit'         =>  1,
+                    'paid'                   =>  0,
+                    'plan'                   =>  0,
+                    'returns'                =>  0.00,
+                    // 'balance'                =>  0.00
+                    // 'active_deposit'
+                ]);
+            Withdrawal::create([
+                    'user_id'                => $user->id,
+                    'withdrwal_amount'       => 0.00,
+
+                ]);
+            Nextofkin::create([
+                    'user_id'                 => $user->id,
+                    'name'                    => '',
+                    'email'                   => '',
+                    'phone'                   => '',
+                ]);
+
+
+         return $user;
     }
 }

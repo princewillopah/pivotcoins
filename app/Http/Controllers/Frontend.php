@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Mail\ContactFormMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+
 
 class Frontend extends Controller
 {
@@ -19,6 +21,19 @@ class Frontend extends Controller
     public function contact(){
         return view('frontend.contact');
     }
+    public function store(Request $request){
+        $this->validate($request, [
+            'name'           =>'required',
+            'email'          =>'required|email',
+            'message'        =>'required',
+        ]);
+
+        Mail::to('support@pivotcoins.trade')->send(new ContactFormMail($request));
+         
+        // return view('frontend.contact');
+        return redirect()->back()->with('success','Thank you. We will get back to you shortly.');
+    }
+
     public function faq(){
         return view('frontend.faq');
     }

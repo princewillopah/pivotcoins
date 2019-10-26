@@ -8,6 +8,10 @@ $(document).ready(function(){
 
     // -----------end menu animated border-bottom ------------------- 
 
+       $("#myCarouselIndicators").carousel({
+			pause: true,
+			interval: 100000,
+		});
     // -----------scrol top button -------------------
 
     $(window).scroll(function () {

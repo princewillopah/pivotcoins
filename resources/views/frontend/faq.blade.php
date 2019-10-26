@@ -1,5 +1,5 @@
 @extends('layouts.frontend')
-{{-----------------------------------------------------------------}}
+
 @section('title')
 FAQ
 @endsection
@@ -42,11 +42,11 @@ FAQ
                             </div>
                         </div>
                         <div class="panel">
-                            <div class="heading"> WHY IS IT PROFITABLE FOR ME TO COOPERATE WITH Pivotcoins LIMITED? </div>
+                            <div class="heading"> WHY IS IT PROFITABLE FOR ME TO COOPERATE WITH PIVOTCOINS LIMITED? </div>
                             <div class="content">
                             <p>
                             High profit is ensured by the rapid growth rates of the 
-                            cryptocurrency market in general and Bitcoin in particular. 
+                            Cryptocurrency market in general and Bitcoin in particular. 
                             Our financial risks are minimized by diversified investments in various activities.
                            </p>
                             </div>
@@ -64,7 +64,7 @@ FAQ
                             <div class="content">
                             <p>     Pivotcoins Investment is designed for people
                                      who are looking for a simple, easy way to
-                                      invest online. with Pivotcoins Investment, It is a discretionary investment 
+                                      invest online. With Pivotcoins Investment, it is a discretionary investment 
                                       advisory which means we make financial decisions for you. 
                                       Unlike other kinds of investments where you authorize each trade, this 
                                       investment type enables us to make trades on your behalf when
@@ -114,7 +114,7 @@ FAQ
                                 <p>
                                     To become a part of Pivotcoins investor, you have to create an account supplying 
                                     valid information to the input fields. you will be redirected to the email account you 
-                                    provided for confirmation. Ater verification, you can now login to be directed to your dashboard.
+                                    provided for confirmation. AFter verification, you can now login to be directed to your dashboard.
                                 </p>  
                             </div>
                         </div>
@@ -128,15 +128,37 @@ FAQ
                             </div>
                         </div>
                         <div class="panel">
-                            <div class="heading">What can i do if when  have difficulties accessing my account.</div>
+                            <div class="heading"> Why am i asked of my wallet ID during registration and is it safe to expose it? </div>
+                            <div class="content">
+                            <p> We require your wallet ID in order to credit it whenever your investment has yield returns or whenever you request for withdrawal.<p>
+                            <p>it is completely safe as it is anonymous and it does not cointain any information about its owner
+                                {{-- Lets look at the example with Bitcoin. Bitcoin address is your ID (account, wallet number), starting with 1 or 3 and containing 27-34 alphanumeric 
+                                Latin characters (other than 0, O, I). The address can also be represented as a QR-code, it is anonymous and does not contain information about the owner. For example,
+                                 1HQWcQxn3M8mGC1kKupqZdQB4Cc4HddB4B. --}}
+                           </p>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="heading">What can i do if i have difficulties accessing my account.</div>
                             <div class="content">
                             <p> If your issue is related to password, then make use of the "Forgot Password" feature in 
                                 your login page and provide the e-mail address you provided during registration and click "Reset Password".  
-                                your password will be reset.
+                                Your password will be reset.
                             </p>   
                              <p> 
-                                 If your issue is related to emal address, then or other forms which may not likely be, the reach us 
-                                 via suupport@pivotcoins.trade. we will fix it right away.
+                                 If you have issues accessing your email or other related issues, which may not likely be, then reach us 
+                                 through suupport@pivotcoins.trade. we will fix your issues right away.
+                                </p>  
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="heading">Can i update/modify my profile information.</div>
+                            <div class="content">
+                            <p> With the exception of your wallet ID and email address, every other information provided can be modified .
+                            </p>   
+                             <p> 
+                                E-mail and e-wallet number can be change only through the Administrator for the safety purpose. 
+                                For this purpose contact the Administrator on suupport@pivotcoins.trade.
                                 </p>  
                             </div>
                         </div>
@@ -147,20 +169,16 @@ FAQ
                             </div>
                         </div>
                         <div class="panel">
-                            <div class="heading"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. </div>
+                            <div class="heading"> How I can contact the Administration? </div>
                             <div class="content">
-                            <p>Minimum investment to deposit(invest) as a member is $1,000, 
-                                    which is the lower end of the silver plan.  </p>
+                            <p> For non-members, you can contact us through the contact form or the phone numbers provided.</p>
+                            <p> For members, you can contact us through the "Help Menu" in your dashboard.</p>
                             </div>
                         </div>
                         <div class="panel">
-                            <div class="heading"> Lorem ipsum dolor sit amet.</div>
+                            <div class="heading"> How much can I earn, using the partner program?</div>
                             <div class="content">
-                            <p>   At Pivotcoins, wise measures are taken to prevent any forms of loses by 
-                                        trading at a low percentage 
-                                        of the account to minimise risk. Specific 
-                                        safeguards are also put in place to reduce any possible risk 
-                                        our investors may face.  </p>
+                            <p>  the total amount you stand to earn depends on the number of invitees you refer. 5% each of the deposits made by your referrals will be deposited into your account.  </p>
                              </div>
                         </div>
 

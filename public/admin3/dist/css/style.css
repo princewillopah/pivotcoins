@@ -23,7 +23,7 @@ label {color:#aaa;}
 .main-footer a{color:#2b7a78;}
 .sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active {color: #fff;background-color: #2b7a78;}
 .sidebar-dark-primary .nav-treeview > .nav-item > .nav-link.active, .sidebar-dark-primary .nav-treeview > .nav-item > .nav-link.active:hover {color: #343a40;background-color: #aaa;}
-.wrapper{background:#27293d;;}
+.wrapper{background:#27293d;}
 .custom-file-label{color:#2b7a78; background:transparent;border: 1px solid #3aafa9}
 .custom-file-label::after {color: #1e1e2f;content: "CHOOSE FILE";background-color:  #2b7a78;border-left: 2px solid  #2b7a78;}
 
@@ -41,9 +41,14 @@ tr th{color:#fff}
 .border-bottom {border-bottom: 1px solid #2b7a78!important;}
 .main-footer{border-top: 1px solid transparent!important;margin-top:30px!important;}
 
- .bg-danger, .bg-warning, .bg-info, .bg-success{background:#1e1e2f!important;color:#aaa!important;}
- .bg-danger a, .bg-warning a, .bg-info a, .bg-success a{background: #2b7a78!important;color:#fff!important;}
+.bg-info{background:#1e1e2f!important;color:#aaa!important;}
+ p.small-box-footer{background: #2b7a78!important;color:#fff!important;}
+
   .dropdown-menu a.dropdown-item.py-3{background:#1e1e2f!important;color:#aaa;padding-top: 10px !important;padding-bottom: 10px !important;}
  .dropdown-divider{border-bottom:1px solid rgba(#2b7a78,.1);border-top: 1px solid #2b7a78}
   .nav-header{color:#2b7a78!important;font-weight:700}
   div.dataTables_wrapper div.dataTables_info{ color:#aaa!important}
+  --------------
+  /* header */
+  ------------
+ 

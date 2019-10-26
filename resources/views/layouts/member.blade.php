@@ -9,6 +9,7 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
+  
  
   <link rel="stylesheet" href="{{asset('admin3/plugins/font-awesome/css/font-awesome.min.css')}}">
   <!-- Ionicons -->
@@ -33,6 +34,7 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Heebo|Rubik&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i&display=swap" rel="stylesheet">
 
   <link href="{{ asset('admin3/dist/css/datepicker.css') }}" rel="stylesheet">
   {{-- <link href="{{ asset('admin3/dist/css/daterangepicker.css') }}" rel="stylesheet"> --}}
@@ -58,6 +60,11 @@
           <div class="rate">Bitcoin Price: <span class="btc">1 BTC</span> = <span class="btc-usd"><span class="price">10606.13</span></span> USD</div>
         </a>
       </li>
+      {{-- <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">
+          <div class="rate">current location: {{$location}}</div>
+        </a>
+      </li> --}}
     </ul>
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
@@ -74,7 +81,7 @@
         @endif
           {{-- <img src="{{asset('uploads/'.Auth::user()->photo)}}" class="img-circle elevation-2" width="30px" height="30px" alt="{{ Auth::user()->name }}"> --}}
           {{-- <img src="uploads/{{Auth::user()->photo}}" class="img-circle elevation-2" width="30px" height="30px" alt="User Image"> --}}
-            <span class="pl-2" > {{ Auth::user()->name }}</span>
+            <span class="pl-2" > {{ucfirst(Auth::user()->name)}} {{ucfirst(Auth::user()->lastname)}}</span>
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
           {{-- <span class="dropdown-item dropdown-header">15 Notifications</span> --}}
@@ -88,6 +95,13 @@
             <i class="fa fa-home mr-2"></i> Home
             {{-- <span class="float-right text-muted text-sm">12 hours</span> --}}
           </a>
+          <div class="dropdown-divider"></div>
+         @if(Auth::user()->admin == 1)
+          <a href="{{ route('members.index')}}" class="dropdown-item py-3">
+            <i class="fa fa-user mr-2"></i> Admin Dashboard
+            {{-- <span class="float-right text-muted text-sm">12 hours</span> --}}
+          </a>
+          @endif
           <div class="dropdown-divider"></div>
           <a href="{{ route('profile')}}" class="dropdown-item py-3">
             <i class="fa fa-user mr-2"></i> Profile
@@ -120,7 +134,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="{{route('homepage')}}" class="brand-link">
       <img src="{{asset('admin3/dist/img/admin-logo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
       <span class="brand-text font-weight-light">
@@ -143,7 +157,7 @@
          @endif
         </div>
         <div class="info">
-          <a href="#" class="d-block">{{ Auth::user()->name }}</a>
+          <a href="#" class="d-block"> {{ucfirst(Auth::user()->name)}} {{ucfirst(Auth::user()->lastname)}}</a>
         </div>
       </div>
 
@@ -161,44 +175,44 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fa fa-th"></i>
+            <a href="{{route('deposit')}}" class="nav-link  {{(request()->is('home/deposit'))?'active':''}}">
+                 <i class="nav-icon fa fa-th"></i>
               <p>
                 Deposit
-                <span class="right badge badge-danger">New</span>
+                <!-- <span class="right badge badge-danger">New</span> -->
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
+            <a href="{{route('withdrawal')}}" class="nav-link  {{(request()->is('home/withdrawal'))?'active':''}}">
               <i class="nav-icon fa fa-th"></i>
               <p>
                 Withdraw
-                <span class="right badge badge-danger">New</span>
+                <!-- <span class="right badge badge-danger">New</span> -->
               </p>
             </a>
           </li>
   {{-- ================================== --}}
             <li class="nav-header">REPORTS</li>
             <li class="nav-item">
-                <a href="pages/calendar.html" class="nav-link">
+                 <a href="{{route('all.withdrawals')}}" class="nav-link  {{(request()->is('home/withdrawals'))?'active':''}}">
                   <i class="nav-icon fa fa-calendar"></i>
                   <p>
                     Withdrawals
-                    <span class="badge badge-info right">2</span>
+                    {{-- <span class="badge badge-info right">2</span> --}}
                   </p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/calendar.html" class="nav-link">
+                 <a href="{{route('all.deposits')}}" class="nav-link  {{(request()->is('home/deposits'))?'active':''}}">
                   <i class="nav-icon fa fa-calendar"></i>
                   <p>
                     Deposits
-                    <span class="badge badge-info right">2</span>
+                    {{-- <span class="badge badge-info right">2</span> --}}
                   </p>
                 </a>
               </li>
-            <li class="nav-item">
+           {{--  <li class="nav-item">
               <a href="pages/calendar.html" class="nav-link">
                 <i class="nav-icon fa fa-calendar"></i>
                 <p>
@@ -206,35 +220,32 @@
                   <span class="badge badge-info right">2</span>
                 </p>
               </a>
-            </li>
+            </li> --}}
         
     {{-- ===========SETTINGS====================== --}}
     <li class="nav-header">SETTINGS</li>
             <li class="nav-item">
-            <a href="" class="nav-link">
-                <i class="nav-icon fa fa-calendar"></i>
+               <a href="{{route('profile')}}" class="nav-link  {{(request()->is('profile'))?'active':''}}">
+                <i class="nav-icon fa fa-user"></i>
                 <p>
                   Profile
-                  <span class="badge badge-info right">2</span>
+                  <!-- <span class="badge badge-info right">2</span> -->
                 </p>
               </a>
             </li>
             <li class="nav-item">
-                <a href="pages/calendar.html" class="nav-link">
+                  <a href="{{route('nxtfkin')}}" class="nav-link  {{(request()->is('next-of-kin'))?'active':''}}">
                   <i class="nav-icon fa fa-calendar"></i>
                   <p>
                     Next of Kin
-                    <span class="badge badge-info right">2</span>
+                    <!-- <span class="badge badge-info right">2</span> -->
                   </p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/calendar.html" class="nav-link">
-                  <i class="nav-icon fa fa-calendar"></i>
-                  <p>
-                    Help
-                    <span class="badge badge-info right">2</span>
-                  </p>
+                 <a href="{{route('support')}}" class="nav-link  {{(request()->is('home/support'))?'active':''}}">
+                  <i class="fa fa-phone-square" style="margin-left:5px; margin-right: 5px;"></i>   {{ __('Support') }}  
+                  {{-- <p>  Support</p> --}}
                 </a>
               </li>
               <li class="nav-item">
@@ -251,7 +262,7 @@
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                       @csrf
                     </form>
-                    <i class="nav-icon fa fa-calendar"></i> {{ __('Logout') }} 
+                    <i class="nav-icon fa fa-sign-out"></i> {{ __('Logout') }} 
                     {{-- <span class="float-right text-muted text-sm">2 days</span> --}}
                   </a>
 
@@ -274,11 +285,11 @@
   <strong>Copyright &copy; 2019 <a href="{{route('home')}}">Pivotcoins</a></strong>
   </footer>
 
-  <!-- Control Sidebar -->
+ {{--  <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
   </aside>
-  <!-- /.control-sidebar -->
+  <!-- /.control-sidebar --> --}}
 </div>
 <!-- ./wrapper -->
 

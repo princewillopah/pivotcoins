@@ -20,7 +20,7 @@
     //transform: translateY(-120%);
     //width: 100%;
     &-message{
-      h1{color:$color-4;font-weight: bold; font-size:50px}
+      h1{color:$color-4;font-weight: bold; font-size:50px;margin-bottom:15px}
       div{color: $color-6; font-style: italic;
         a{text-decoration: none;}
       }
@@ -40,7 +40,7 @@
 .accordion-container .panel .heading {text-transform:uppercase; border-bottom: #eee 1px solid;font-size: 0.9em; font-weight: 700; color: $color-2; padding: 15px 20px; background: url("../img/faq/keyboard_arrow_up.svg") no-repeat right; background-position: 98% 12px !important; background-size: 28px !important; }
 .accordion-container .panel a { text-decoration: none; }
 .accordion-container .panel .content p { font-size: 0.9em; line-height: 1.5em; font-weight: 400; color: #6f6f6f; padding: 10px 0; margin: 0; }
-.accordion-container .panel .content p:first-child { padding-top: 0;}
+.accordion-container .panel .content p:first-child { padding-top: 10px;}
 .accordion-container .panel .content ul { margin-left: 0; padding-bottom: 20px; padding-left: 20px; font-weight: 300; margin-top: 5px; }
 .accordion-container .panel .content ul li { list-style-type: none; font-size: 0.8em; line-height: 1.5em; color: #6f6f6f; }
 .accordion-container .panel .content ul li:before { content: "—"; padding-right: 4px; display: inline; }
@@ -65,7 +65,7 @@
 .accordion-container .panel .heading { color: $color-2;text-transform:uppercase; border-bottom: #fff 1px solid;font-size: 0.9em; font-weight: 700; color: #383838; padding: 15px 20px; background: url("../img/faq/keyboard_arrow_up.svg") no-repeat right; background-position: 98% 12px !important; background-size: 28px !important; }
 .accordion-container .panel a { text-decoration: none; }
 .accordion-container .panel .content p { font-size: 0.9em; line-height: 1.5em; font-weight: 400; color: #6f6f6f; padding: 10px 0; margin: 0; }
-.accordion-container .panel .content p:first-child { padding-top: 0;}
+.accordion-container .panel .content p:first-child { padding-top: 10px;}
 .accordion-container .panel .content ul { margin-left: 0; padding-bottom: 20px; padding-left: 20px; font-weight: 300; margin-top: 5px; }
 .accordion-container .panel .content ul li { list-style-type: none; font-size: 0.8em; line-height: 1.5em; color: #6f6f6f; }
 .accordion-container .panel .content ul li:before { content: "—"; padding-right: 4px; display: inline; }

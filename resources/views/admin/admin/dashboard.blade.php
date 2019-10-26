@@ -17,7 +17,7 @@
                 </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="{{route('home')}}">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('dashboard')}}">Dashboard</a></li>
                         </ol>
                     </div>
             </div><!-- /.row -->
@@ -29,67 +29,52 @@
         <div class="container-fluid">
           <!-- Small boxes (Stat box) -->
           <div class="row">
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-4 col-6 ">
               <!-- small box -->
               <div class="small-box bg-info">
                 <div class="inner">
-                <h3>98</h3>
-                  <p>SERMONS</p>
+                <h3>{{$investors->count()}}</h3>
+                  <p>INVESTORS</p>
                 </div>
                 <div class="icon">
                   {{-- <i class="ion ion-bag"></i> --}}
                   <i class="fa fa-arrow-circle-right"></i>
                 </div>
-                <a href="" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="{{route('members.index')}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div>
             <!-- ./col -->
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-4 col-6">
               <!-- small box -->
-              <div class="small-box bg-success">
+              <div class="small-box bg-info">
                 <div class="inner">
-                    <h3>67</h3>
-                    <p>EVENTS</p>
+                    <h3>{{$deposits}}</h3>
+                    <p>DEPOSITS</p>
                 </div>
                 <div class="icon">
                   {{-- <i class="ion ion-stats-bars"></i> --}}
                   <i class="fa fa-arrow-circle-right"></i>
                 </div>
-                <a href="" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="{{route('alldeposits')}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div>
             <!-- ./col -->
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-4 col-12">
               <!-- small box -->
-              <div class="small-box bg-warning">
+              <div class="small-box bg-info">
                 <div class="inner">
-                    <h3>565</h3>
-                    <p>PASTORS</p>
+                    <h3>{{$withdrawals->count()}}</h3>
+                    <p>WITHDRAWALS</p>
                 </div>
                 <div class="icon">
                   {{-- <i class="ion ion-person-add"></i> --}}
                   <i class="fa fa-arrow-circle-right"></i>
 
                 </div>
-                <a href="" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="{{route('allwithdrawals')}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div>
-            <!-- ./col -->
-            <div class="col-lg-3 col-6">
-              <!-- small box -->
-              <div class="small-box bg-danger">
-                <div class="inner">
-                    <h3>45</h3>
-                    <p>CATEGORIES</p>
-                </div>
-                <div class="icon">
-                  {{-- <i class="ion ion-pie-graph"></i> --}}
-                  <i class="fa fa-arrow-circle-right"></i>
-                </div>
-                <a href="" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-              </div>
-            </div>
-            <!-- ./col -->
+          
           </div><!-- /.row -->
         </div><!-- /.container-fluid -->
       </section>
@@ -103,6 +88,11 @@
 
 
 @section('style')
+    <style>   
+  .content-header{background: #1e1e2f; border-bottom: 1px solid #888;padding:0 8px;margin-bottom: 30px;}
+   .breadcrumb.float-sm-right{margin-top: 15px;}
+   .content-header h1{font-size: 50px!important;color: #636b6f!important;font-family: 'Nunito', sans-serif!important;font-weight: 200!important;}
+  </style> 
     
 @endsection
 

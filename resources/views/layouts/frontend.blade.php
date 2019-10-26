@@ -21,6 +21,7 @@
 
     <link href="//db.onlinewebfonts.com/c/ab804af7699fabaf769911c77bb4d115?family=UniSansW01-Regular" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Blinker&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i&display=swap" rel="stylesheet">
 
     <!--cdn-->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -35,7 +36,9 @@
     <link rel="stylesheet" href="{{asset('css/vendor/accordion.css')}}">
     @yield('style')
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
+     <link rel="stylesheet" href="{{asset('css/vendor/responsive.css')}}">
     <style>
+        .mobile-logo{display: none}
         /* .btcwdgt.btcwdgt-text-ticker.btcwdgt-s-price {
             min-width: 100% !important;
             box-shadow: none !important;
@@ -118,6 +121,23 @@
         };
     </script> --}}
 </head>
+
+<!--Start of Tawk.to Script---------------------------------------------------------------------->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5d9bad766c1dde20ed057bee/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script--------------------------------------------------------------------------->
+
+
+
 <body>
 
 
@@ -132,7 +152,6 @@
                     <div class="login-register d-flex">
                         <ul class="nav nav-pills nav-lang language">
                             <li class="nav-item">
-
 
                                 <a href="" class="navlink">
                                       <span class="translate mr-auto ml-4">
@@ -220,14 +239,14 @@
 
                             <li class="nav-item">
                                 {{-- BTC/USD  --}}
-                                {{-- <div class="rate">Bitcoin Price:
+                                <div class="rate">
                                      <span class="btc">1 BTC</span> = <span class="btc-usd"><span class="price">10606.13</span></span> USD
-                                </div> --}}
-                                <div class="rate">BTC/USD:
-                                        {{-- <span class="btc">1 BTC</span> = <span class="btc-usd"> --}}
-                                            <span class="price">10606.13</span>
-                                        {{-- </span> --}}
-                                </div>
+                                </div> 
+                                {{-- <div class="rate">BTC/USD: --}}
+                                        {{-- <span class="btc">1 BTC</span> = <span class="btc-usd">
+                                            <span id="btc_rate"></span>
+                                       </span> --}}
+                                {{-- </div> --}}
         
                             </li>
                             {{-- <li>
@@ -265,13 +284,8 @@
     <section id="navbar">
         <nav class="navbar navbar-expand-lg nav-color ">
             <div class="container">
-                <a class="navbar-brand" href="#">
-
-                    <picture>
-                        <source srcset="{{asset('img/generics/_LOGOS-small.png')}}"  media="(max-width:400px)">
-                        <img src="{{asset('img/generics/logo/PivotcoinsThickThin-large.png')}}"  class="" alt="">
-                    </picture>
-
+                <a class="navbar-brand" href="{{route('homepage')}}">
+                    <img src="img/generics/logo/mainlogo.png"  class="" alt=""> 
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
@@ -299,8 +313,17 @@
                                  Referral
                                 </a>
                             </li>
-                        <li class="nav-item mynavlink {{(request()->is('/contact'))?'active':''}}">
+                        <li class="nav-item mynavlink  {{(request()->is('/contact'))?'active':''}}">
                             <a class="nav-link mynavAnchor has-border navbar-border-animation" href="{{route('contact')}}" id="contact">Contact Us</a>
+                        </li>
+                        <li class="nav-item mynavlink mobile {{(request()->is('/faq'))?'active':''}}">
+                            <a class="nav-link mynavAnchor has-border navbar-border-animation" href="{{route('faq')}}" id="faq">FAQ</a>
+                        </li>
+                         <li class="nav-item mynavlink mobile {{(request()->is('/login'))?'active':''}}">
+                            <a class="nav-link mynavAnchor has-border navbar-border-animation" href="{{route('login')}}">Login</a>
+                        </li>
+                         <li class="nav-item mynavlink mobile {{(request()->is('/register'))?'active':''}}">
+                            <a class="nav-link mynavAnchor has-border navbar-border-animation" href="{{route('register')}}">Register</a>
                         </li>
                     </ul>
                 </div>
@@ -308,25 +331,26 @@
         </nav>
     </section><!-- /#navbar -->
 </section>
-{{--------------------  end header  menu ---------------------------------------------------------------------}}
-{{--//////////////////////////////////////////////////////////////////////////////////////////////////--}}
-{{------------------------- content ----------------------------------------------------------------}}
+
+
+
+
  @yield('content')
 
-{{----------------------  end content -------------------------------------------------------------------}}
-{{--//////////////////////////////////////////////////////////////////////////////////////////////////--}}
-{{---------------------------- footer -------------------------------------------------------------}}
+
+
+
 
 <section class="get-started sections-white">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="head">
-                    <h2>Get started today with pivotcoins</h2>
+                    <h2>Get started today with Pivotcoins</h2>
                     <p>Join the 5,000+ investors and start making money now</p>
                 </div>
                 <div class="bbtn">
-                    <a href="sign-up.php" href="{{route('homepage')}}" class="btn rounded-0 bttn-fill bttn-md bttn-primary">get started</a>
+                    <a href="{{route('register')}}" class="btn rounded-0 bttn-fill bttn-md bttn-primary">get started</a>
                 </div>
 
             </div>
@@ -337,29 +361,35 @@
     <div class="footer-main">
         <div class="container ">
             <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="main-footer main-footer1">
-                        <div class="company-logo">
+                     <div class="col-md-12 mobile-logo">
+                      
+                         <div class="company-logo main-footer main-footer4">
                             <picture>
-                                <source srcset="img/generics/_LOGOS-small.png"  media="(max-width:400px)">
+                                {{-- <source srcset="img/generics/_LOGOS-small.png"  media="(max-width:400px)"> --}}
                                 <img src="img/generics/logo/PivotcoinsThickthinReversed-large.png"  class="" alt="">
                             </picture>
-                            <div style="clear: both"></div>
-                        </div><!-- /.charity-logo -->
-                        <div class="nav justify-content-center">
-                            <div class="media">
-                                <a href="https://web.facebook.com/Oseituah-Simeon-Egheosesele-351564388934768/?ref=vcp2p" class="nav-link facebook" ><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#" class="nav-link twitter" ><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="https://www.youtube.com/channel/UCPbE3_rWZysahIq1UXmvjXA?view_as=subscriber" class="nav-link youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                                <a href="#" class="nav-link instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                <a href="#" class="nav-link linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                             <div class="footer-contact mobile mt-4">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <span> +1 450-231-4914, <br>+1 434-223-4613</span>
+                            {{-- <span> +1 434-223-4613</span> --}}
                             </div>
-                        </div>
-                    </div><!-- /.main-footer -->
-                </div>
-
-
-                <div class="col-md-2 col-sm-6">
+                            <div class="footer-contact mobile">
+                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                <span>+1 929-201-6519</span>
+                            </div>
+                            <div class="footer-contact mobile">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <span> support@pivotcoins.trade</span>
+                            </div>
+                            <div class="footer-contact mobile">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span> PO Box 1759 Hereford, <br>TX 79045 United States</span>
+                            </div>
+                           
+                         </div>
+                    </div>
+                                                      
+                <div class="col-md-3 col-sm-6 ">
                     <div class="main-footer main-footer2">
                         <h5>About</h5>
                         <nav class="nav flex-column">
@@ -373,7 +403,7 @@
                     </div><!-- /.main-footer -->
                 </div>
 
-                <div class="col-md-2 col-sm-6">
+                <div class="col-md-3 col-sm-6">
                     <div class="main-footer main-footer3">
                         <h5>Information</h5>
                         <nav class="nav flex-column">
@@ -385,10 +415,10 @@
                         </nav>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-6">
+                <div class="col-md-3 col-sm-6">
                     <div class="main-footer main-other">
-                        <h5>Others</h5>
-                        <nav class="nav">
+                        <h5>Other Deposit Options</h5>
+                        <nav class="nav pay">
                             <a class="nav-link active" href="#"><i class="fa fa fa-cc-visa" aria-hidden="true"></i></a>
                             <a class="nav-link" href="#"><i class="fa fa-cc-mastercard" aria-hidden="true"></i></a>
                             <a class="nav-link" href="#"><i class="fa fa-cc-paypal" aria-hidden="true"></i></a>
@@ -396,9 +426,16 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 desktop">
                     <div class="main-footer main-footer4">
-                        <h5>Contact</h5>
+                        {{-- <h5>Contact</h5> --}}
+                         <div class="company-logo">
+                            <picture>
+                                {{-- <source srcset="img/generics/_LOGOS-small.png"  media="(max-width:400px)"> --}}
+                                <img src="img/generics/logo/PivotcoinsThickthinReversed-large.png"  class="" alt="">
+                            </picture>
+                            <div style="clear: both"></div>
+                        </div><!-- /.charity-logo -->
                         <div class="footer-contact">
                             <i class="fa fa-phone" aria-hidden="true"></i>
                             <span> +1 450-231-4914,</span>
@@ -459,9 +496,9 @@
 <script src="{{asset('js/letteranimation.js')}}"> </script>
 <script src="{{asset('js/accordion.min.js')}}"> </script>
 @yield('script')
- {{-- <div class="rate">Bitcoin Price:
+ {{--  <div class="rate">Bitcoin Price:
     <span class="btc">1 BTC</span> = <span class="btc-usd"><span class="price">10606.13</span></span> USD
-</div> --}}
+</div>  --}}
 <script>
     $(function(){
         getCurr();
@@ -481,36 +518,62 @@
                 $('.btc-usd').find('.change').html(response.ticker.change);
             }, "json" );
         }
-    });
-    
-    </script>
-    <script>
-            // $(document).ready(function(){
-            //  $('#btnRemoveFirstSub').click(function(){
-            //    var myTextSub = $('.MyStringSub').text();
-            //    var RemoveFirstCharSub = myTextSub.substring(1);
-            //         $('.removedStringSub').html('<strong>The new string is: </strong>'+RemoveFirstCharSub);
-            //    });
-            // });
-            $(document).ready(function(){
-             $('#btnRemoveFirstSub').click(function(){
-               var myTextSub = $('.current-prices-info .ethereum-price-widget div div div span').text();
-               myTextSub.substring(1);
-                    // $('.removedStringSub').html('<strong>The new string is: </strong>'+RemoveFirstCharSub);
-               });
+    });  
+</script>
+<script>
+    $(function () {
+        function getUrl(currency) {
+            return "https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,BCH,LTC&tsyms=USD";
+        }
+        function updateRate() {
+            $.get(getUrl("BTC"), function (data) {
+                $("#btc_rate").text(data.BTC.USD);
+                //$("#bitcoin_circle").text(data.USD);
             });
-             
-    </script>
+            $.get(getUrl("ETH"), function (data, status) {
+                $("#eth_rate").text(data.ETH.USD);
+            });
+            $.get(getUrl("LTC"), function (data, status) {
+                $("#ltc_rate").text(data.LTC.USD);
+            });
+            $.get(getUrl("BCH"), function (data, status) {
+                $("#bch_rate").text(data.BCH.USD);
+            });
+                         var total_deposit =  '3.5906124999999998';
+          /* total_deposit += parseFloat($("#eth_rate").text()) * parseFloat($("#ethereum_circle").text());
+            total_deposit += parseFloat($("#ltc_rate").text()) * parseFloat($("#lite_circle").text());*/
+
+            $("#deposits_circle").text(total_deposit);
+          
+        }
+        updateRate();
+       setInterval(updateRate, 1000);
+
+    });
+</script>
+
+<script>
+        // $(document).ready(function(){
+        //  $('#btnRemoveFirstSub').click(function(){
+        //    var myTextSub = $('.MyStringSub').text();
+        //    var RemoveFirstCharSub = myTextSub.substring(1);
+        //         $('.removedStringSub').html('<strong>The new string is: </strong>'+RemoveFirstCharSub);
+        //    });
+        // });
+        // ---------------------------------------------------------------------------------------
+        // $(document).ready(function(){
+        //     $('#btnRemoveFirstSub').click(function(){
+        //     var myTextSub = $('.current-prices-info .ethereum-price-widget div div div span').text();
+        //     myTextSub.substring(1);
+        //         // $('.removedStringSub').html('<strong>The new string is: </strong>'+RemoveFirstCharSub);
+        //     });
+        // });
+            
+</script>
 
 </body>
 </html>
-{{----------------------------- end footer ------------------------------------------------------------}}
 
-{{-- <script type="text/javascript">
-    crypt_single_base_currency = "Bitcoin (BTC)";crypt_single_target_currency = "US Dollar (USD)";
- </script>
- <script type="text/javascript" src="https://www.cryptonator.com/ui/js/widget/single_widget.js">
-</script> --}}
 
 
 

@@ -1,9 +1,9 @@
 @extends('layouts.frontend')
-{{-----------------------------------------------------------------}}
+
 @section('title')
     Home
 @endsection
-{{-----------------------------------------------------------------------}}
+
 @section('content')
     <!--==================  hero =======================================-->
     <section id="hero-price">
@@ -16,7 +16,7 @@
                         <li data-target="#myCarouselIndicators" data-slide-to="2"></li>
                         <li data-target="#myCarouselIndicators" data-slide-to="3"></li>
                         <li data-target="#myCarouselIndicators" data-slide-to="4"></li>
-                        <li data-target="#myCarouselIndicators" data-slide-to="5"></li>
+                        {{-- <li data-target="#myCarouselIndicators" data-slide-to="5"></li> --}}
                     </ol>
 
                     <div class="carousel-inner">
@@ -29,12 +29,13 @@
                                     <div class="col-md-12">
                                         <!-- <div class="caption" id="caption1"> -->
                                         <div class="caption-inner">
-                                            <h1 class="wow animated fadeInRight"  data-animation="fadeInRight" data-delay="300ms" style="animation-delay: 300ms">Your Pathway To Financial Stability</h1>
-                                            <p class=" wow animated fadeInUp"  data-wow-delay=".1s" data-wow-duration=".2s">Join Pivotcoins today and move your business to a newer level
+                                            <h1 class="wow animated fadeInUp"   data-wow-duration=".9s">Building Your Way To Success And Ensure Your Future</h1>
+                                            <p class=" wow animated fadeInUp"  data-wow-delay=".9s" data-wow-duration=".9s">Join Pivotcoins today and move your business to a newer level
                                             </p>
                                             <!-- <a href="sign-up.php" class="btn wow fadeInUp"  data-wow-delay=".2s" data-wow-duration=".3s">Join Now</a> -->
+                                            <a href="{{route('register')}}" class="btn wow animated fadeInUp"  data-wow-delay="1.8s" data-wow-duration=".9s">Join Now</a>
                                         </div>
-                                        <a href="sign-up.php" class="btn wow animated fadeInUp"  data-wow-delay=".3s" data-wow-duration=".4s">Join Now</a>
+                                        {{-- <a href="sign-up.php" class="btn wow animated fadeInUp"  data-wow-delay="2s" data-wow-duration=".9s">Join Now</a> --}}
                                         <!-- </div> -->
                                     </div>
                                 </div>
@@ -51,10 +52,10 @@
                                     <div class="col-md-12">
                                         <div class="caption" id="caption2">
                                             <div class="caption-inner">
-                                                <h1 class="pb-1 wow animated fadeInUp" id="caption-title2" data-animation="fadeInLeft" data-delay="500ms" style="animation-delay: 500ms" >A platform that facilitates choice, simplicity and performance.</h1>
-                                                <p class="animated wow fadeInUp" id="caption-para2" data-animation="fadeInRight" data-delay="700ms" style="animation-delay: 700ms">All these are backed by caring experts so that you stay focused on what you do best, win as an individual and succeed as a investor..
+                                                <h1 class="pb-1 wow animated fadeInUp" id="caption-title2" data-wow-duration=".9s" >A platform that facilitates choice, simplicity and performance.</h1>
+                                                <p class="animated wow fadeInUp" id="caption-para2" data-animation="fadeInRight" data-wow-delay=".9s" data-wow-duration=".9s">All these are backed by caring experts so that you stay focused on what you do best, win as an individual and succeed as a investor..
                                                 </p>
-                                                <a href="sign-up.php" class="btn wow animated fadeInUp"  data-wow-delay=".5s" data-wow-duration=".4s">Join Now</a>
+                                                <a href="{{route('register')}}" class="btn wow animated fadeInUp"  data-wow-delay="1.8s" data-wow-duration=".9s">Join Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -72,10 +73,10 @@
                                     <div class="col-md-12">
                                         <div class="caption" >
                                             <div class="caption-inner">
-                                                <h1 class="pb-1 wow animated fadeInUp" id="caption-title4" data-animation="fadeInUp" data-delay="500ms" style="animation-delay: 500ms" >Invest For What Really Matters</h1>
-                                                <p class="animated wow fadeInUp" id="caption-para4" data-animation="fadeInUp" data-delay="700ms" style="animation-delay: 700ms">Whether you're new to investing or a seasoned pro, it's time to partner with a company that believes you could and should be getting more from your money.
+                                                <h1 class="pb-1 wow animated fadeInUp" id="caption-title4" data-animation="fadeInUp"  data-wow-duration=".9s" >Invest For What Really Matters</h1>
+                                                <p class="animated wow fadeInUp" id="caption-para4" data-animation="fadeInUp" data-wow-delay=".9s" data-wow-duration=".9s">Whether you're new to investing or a seasoned pro, it's time to partner with a company that believes you could and should be getting more from your money.
                                                 </p>
-                                                <a href="sign-up.php" class="btn wow animated fadeInUp"  data-wow-delay=".5s" data-wow-duration=".4s">Join Now</a>
+                                                <a href="{{route('register')}}" class="btn wow animated fadeInUp" data-wow-delay="1.8s" data-wow-duration=".9s">Join Now</a>
 
                                             </div>
                                         </div>
@@ -94,10 +95,10 @@
                                     <div class="col-md-12">
                                         <div class="caption " id="caption1">
                                             <div class="caption-inner">
-                                                <h1 class="pb-1 wow animated fadeInUp" id="caption-title2" data-animation="fadeInLeft" data-delay="500ms" style="animation-delay: 500ms" >A Smarter Way To Create Your Furtune</h1>
-                                                <p class="animated wow fadeInUp" id="caption-para2" data-animation="fadeInRight" data-delay="700ms" style="animation-delay: 700ms">Relax while the Experts help you achieve the life style you want
+                                                <h1 class="pb-1 wow animated fadeInUp" id="caption-title2" data-animation="fadeInLeft"  data-wow-duration=".9s" >A Smarter Way To Create Your Furtune</h1>
+                                                <p class="animated wow fadeInUp" id="caption-para2" data-animation="fadeInRight" data-wow-delay=".9s" data-wow-duration=".9s">Relax while the Experts help you achieve the life style you want
                                                 </p>
-                                                <a href="sign-up.php" class="btn wow animated fadeInUp"  data-wow-delay=".5s" data-wow-duration=".4s">Join Now</a>
+                                                <a href="{{route('register')}}" class="btn wow animated fadeInUp"  data-wow-delay="1.8s" data-wow-duration=".9s">Join Now</a>
 
                                             </div>
                                         </div>
@@ -116,10 +117,11 @@
                                     <div class="col-md-12">
                                         <div class="caption" >
                                             <div class="caption-inner">
-                                                <h1 class="pb-1 wow animated fadeInUp" id="caption-title4" data-animation="fadeInRight" data-delay="500ms" style="animation-delay: 500ms" >Invest For What Really Matters</h1>
-                                                <p class=" wow animated fadeInUp" id="caption-para4" data-animation="fadeInLeft" data-delay="700ms" style="animation-delay: 700ms">Whether you're new to investing or a seasoned pro, it's time to partner with a company that believes you could and should be getting more from your money.
+                                                <h1 class="pb-1 wow animated fadeInUp" id="caption-title4" data-animation="fadeInRight"  data-wow-duration=".9s">Our outstanding Trading Strategy Generate huge success with sustainable profits!</h1>
+                                                <p class=" wow animated fadeInUp" id="caption-para4" data-animation="fadeInLeft" data-wow-delay=".9s" data-wow-duration=".9s">Pivotcoin is a fast growing firm with Investment Experts.
+                                                   we offer you a Professional, Efficient and Reliable services with Secure and Reliable Investment Program.
                                                 </p>
-                                                <a href="sign-up.php" class="btn wow animated fadeInUp"  data-wow-delay=".5s" data-wow-duration=".4s">Join Now</a>
+                                                <a href="{{route('register')}}" class="btn wow animated fadeInUp"  data-wow-delay="1.8s" data-wow-duration=".9s">Join Now</a>
 
                                             </div>
                                         </div>
@@ -128,26 +130,6 @@
                             </div>
                             {{-- <div class="courasel-overlay"> </div> --}}
                         </div>
-                        {{-- <div class="carousel-item">
-                            <div class="img-container">
-                                <img class="d-block w-100" src="img/home/slide/5.jpg" alt="MILLIONS OF LITRES OF STORAGE CAPACITY" >
-                            </div>
-                            <div class="carousel-caption carousel-caption-3 d-none d-md-block">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="caption animated fadeInRight" id="caption2" data-animation="fadeInRight" data-delay="300ms" style="animation-delay: 300ms">
-                                            <div class="caption-inner">
-                                                <h1 class="pb-1 animated fadeInLeft" id="caption-title2" data-animation="fadeInLeft" data-delay="500ms" style="animation-delay: 500ms" >Over 2000,000 Investors In Pivotcoins</h1>
-                                                <p class="animated fadeInRight" id="caption-para2" data-animation="fadeInRight" data-delay="700ms" style="animation-delay: 700ms">Take this great opportunity and join Pivotcoins for safe and consistent returns </p>
-                                                <a href="sign-up.php" class="btn animated fadeInUp"  data-wow-delay=".5s" data-wow-duration=".4s">Join Now</a>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="courasel-overlay"> </div>
-                        </div> --}}
 
 
                     </div> <!--<carousel-inner-->
@@ -164,66 +146,34 @@
 
             </div><!-- /.mycourasel -->
         </div>
-        <!-- -------------------single hero--------------------------------- -->
 
-        <!-- <section id="hero">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="contents">
-                            <div class="contents-message">
-                                <h1 class="wow fadeInUp">Yours pathway to financial stability </h1>
-                                <div class="wow fadeInUp">
-                                    <span class="sub cssanimation leFadeInLeft sequence">Take a tour with us</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+    <div class="container current-prices">
+        <div class="row">
+
+            <div class="col-md-4 current-prices-info">
+                <div class="current-btc-prices">
+                    <p>BITCOIN PRICE(USD)</p>
+                    <p  id="btc_rate"></p>
+               </div>
+            </div>
+            <div class="col-md-4 current-prices-info">
+                <div class="current-eth-prices">
+                    <p>ETHEREUM PRICE(USD)</p>
+                    <p  id="eth_rate"></p>
                 </div>
             </div>
-            <div id="particles-js"></div>
-        </section> -->
-        <!-- -------------------current-price--------------------------------- -->
-        <div class="container current-prices">
-            <div class="row">
-                <!--  <-- <div class="col-md-12">
-                     <script src="https://widgets.coingecko.com/coingecko-coin-price-static-headline-widget.js"></script>
-                     <coingecko-coin-price-static-headline-widget  coin-ids="bitcoin,ethereum,bitcash" currency="usd" locale="en"></coingecko-coin-price-static-headline-widget>
-                  </div> ->-->
 
-                <div class="col-md-4 current-prices-info">
-                    <div class="current-btc-prices">
-                        <p>BITCOIN PRICE(USD)</p>
-                        <span>
-                    <div class="btcwdgt-price"></div>
-                    </span>
-                    </div>
+            <div class="col-md-4 current-prices-info">
+                <div class="current-btc-prices">
+                    <p>BITCASH PRICE(USD)</p>
+                    <p  id="bch_rate"></p>
                 </div>
-                <div class="col-md-4 current-prices-info">
-
-                    <div class="current-eth-prices">
-                        <p>ETHEREUM PRICE(USD)</p>
-                        <div class="ethereum-price-widget" data-quote="USD" style="height:190px;width:300px;background-image:url('https://ethereumprice.org/assets/images/animated/ring.svg');background-position:50%;background-size:50px;background-repeat:no-repeat;">
-                        <span style="display:block;text-align:center;padding:20px 0;font-size:14px;font-family:'Open Sans', Arial;">Loading
-                        <a href="https://ethereumprice.org" target="_blank">EthereumPrice.org</a>
-                        </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 current-prices-info">
-                    <div class="current-btc-prices">
-                        <p>BITCASH PRICE(USD)</p>
-                        <span>
-                        <div class="btcwdgt-price" bw-cash="true"></div>
-                       </span>
-                    </div>
-                </div>
-
             </div>
         </div>
+    </div>
 
-    </section>
+</section>
     <!-- ==================================================== -->
     <!-- CRYPTO INTRO -->
     <!-- ==================================================== -->
@@ -256,15 +206,14 @@
             <div class="row">
                 <div class="col-md-6">
 
+
                     <video id='my-video' class='video-css' controls preload='auto' width='100%' height='100%'
-                           poster='MY_VIDEO_POSTER.jpg' data-setup='{}'>
-                        <source src='img/home/mov_bbb.mp4' type='video/mp4'>
-                        <source src='img/home/mov_bbb.ogg' type='video/ogg'>
+                           poster='MY_VIDEO_POSTER.jpg' data-setup='{}' controls autoplay>
+                        <source src='img/home/Pivotcoincommercial.mp4' type='video/mp4'>
 
                     </video>
 
-
-                </div>
+              </div>
                 <div class="col-md-6">
                     <div class="info">
                         <div class="info-head">
@@ -274,10 +223,10 @@
                             or high growth opportunities in mature industries. We provide investment-brokerage
                             and asset management services to private and corporate entities.
                         </p>
-                        <p>Pivotcoins manages assets of private individuals, pension plans,
-                            trust accounts, institutions and investment companies. The main objective of our enterprise
-                            is the maximum availability of our services to the investors of all levels.</p>
-                        <a href="about.php" class="btn bttn-stretch bttn-md bttn-primary">Read more</a>
+                        <p>Pivotcoins is committed to empowering individuals, institutions and
+                            companies to trade and invest, with confidence, in an innovative and reliable environment;
+                             supported by best-in-class personal service and uncompromising integrity.</p>
+                        <a href="{{route('about')}}" class="btn bttn-stretch bttn-md bttn-primary">Read more</a>
 
                     </div>
                 </div>
@@ -293,10 +242,6 @@
                 <div class="col-md-12">
                     <div class="head">
                         <h2>Why potential investors Choose Pivotcoins</h2>
-                        {{-- <img src="img/generics/icon/header-gray.png" alt=""><br> --}}
-                        <!-- <img src="img/generics/icon/header-green.png" alt=""><br>
-                        <img src="img/generics/icon/header-red.png" alt=""> <br>
-                        <img src="img/generics/icon/header-blue.png" alt=""> <br> -->
                     </div>
                 </div>
             </div>
@@ -381,143 +326,23 @@
     <section id="our-plans" class="sections">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="head">
-                        <h2>Our Plans</h2>
-                        {{-- <img src="img/generics/icon/header-gray.png" alt=""><br> --}}
-                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p> -->
+                <div class="col-md-6">
+                    <div class="our-plans-link">
+                        <div class="our-link"> <img src="img/generics/icon/check.png" alt=""><p>Free Registration</p>  </div>
+                        <div class="our-link"> <img src="img/generics/icon/check.png" alt=""><p>No Hidden Charges</p>  </div>
+                        <div class="our-link"> <img src="img/generics/icon/check.png" alt=""><p>Attractive Returns</p>  </div>
+                        <div class="our-link"> <img src="img/generics/icon/check.png" alt=""><p>No Expertise Needed</p>  </div>
+                        <div class="our-link"> <img src="img/generics/icon/check.png" alt=""><p>No Risks - 100% Safe</p>  </div>
                     </div>
                 </div>
-
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-inner">
-                            <h3 class="title">Silver</h3>
-                            <div class="bar">
-                                <div class="emptybar"></div>
-                                <div class="filledbar"></div>
-                            </div>
-                         
-                            <h2 class="percent">3%</h2>
-                    {{--            <p class="percent-limit">Profit Made Weekly</p>
-                            <p class="invest">$1000 - $5000</p> --}}
-                            <table class="table">
-                                <tbody>
-                                  <tr>
-                                    <td>Weekly interest: </td>
-                                    <td>3%</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Minimal investment:</td>
-                                    <td>$1000</td>                  
-                                  </tr>
-                                  <tr>
-                                    <td>Maximal investment:</td>
-                                    <td>$5000</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Investment term:</td>
-                                    <td>Forever</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Payment Days:</td>
-                                    <td>Weekends</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                        </div>
-                        <hr>
-                        <div class="card-footer">
-                        <a href="{{route('register')}}">Sign Up</a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-inner">
-                            <h3 class="title">Gold</h3>
-                            <div class="bar">
-                                <div class="emptybar"></div>
-                                <div class="filledbar"></div>
-                            </div>
-                            <h2 class="percent">4%</h2>
-                            {{-- <p class="percent-limit">Profit Made Weekly</p>
-                            <p class="invest">$6000 - $19000</p> --}}
-                            <table class="table">
-                                <tbody>
-                                  <tr>
-                                    <td>Weekly interest: </td>
-                                    <td>4%</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Minimal investment:</td>
-                                    <td>$6000</td>                  
-                                  </tr>
-                                  <tr>
-                                    <td>Maximal investment:</td>
-                                    <td>$19000</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Investment term:</td>
-                                    <td>Forever</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Payment Days:</td>
-                                    <td>Weekends</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                        </div>
-                        <hr>
-                        <div class="card-footer">
-                            <a href="{{route('register')}}">Sign Up</a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-inner">
-                            <h3 class="title">Diamond</h3>
-                            <div class="bar">
-                                <div class="emptybar"></div>
-                                <div class="filledbar"></div>
-                            </div>
-                            <h2 class="percent">5%</h2>
-                            {{-- <p class="percent-limit">Profit Made Weekly</p>
-                            <p class="invest">$20,000 and above</p> --}}
-                            <table class="table">
-                                <tbody>
-                                  <tr>
-                                    <td>Weekly interest: </td>
-                                    <td>5%</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Minimal investment:</td>
-                                    <td>$20,000</td>                  
-                                  </tr>
-                                  <tr>
-                                    <td>Maximal investment:</td>
-                                    <td>No Limit</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Investment term:</td>
-                                    <td>Forever</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Payment Days:</td>
-                                    <td>Weekends</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                        </div>
-                        <hr>
-                        <div class="card-footer">
-                            <a href="{{route('register')}}">Sign Up</a>
-                        </div>
-
-                    </div>
+                <div class="col-md-6">
+                  <div id="ours">
+                      <h2>Straightforward Investment. No surprises</h2>
+                      <p>
+                           Our investment plans offer a great opportunity to begin your own path towards actualizing your most ambitious desires and conquer new horizons.
+                        </p>
+                      <a href="{{route('plans')}}" class="btn plans-btn">Our Packages</a>
+                  </div>
                 </div>
             </div>
         </div>
@@ -530,9 +355,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="head">
-                        <h2>Three Simple Steps</h2>
-                        {{-- <img src="img/generics/icon/header-green.png" alt=""><br> --}}
-                        <!-- <p>Just these few steps, you are set</p> -->
+                        <h2>Three easy way to start</h2>
+
                     </div>
                 </div>
 
@@ -569,7 +393,6 @@
                                         withdrawal, you need to fill the withdrawal application
                                         form in your dashboard, indicating the amount you want to withdraw.
                                         Processing of your application will be followed right away.
-
                                     </p>
                                 </div>
                                 <i class="fa fa-angle-right"></i>
@@ -583,9 +406,6 @@
                         <div id="sync1" class="owl-carousel owl-theme">
                             <div class="item">
                                 <img class="img-fluid" src="img/home/signup/phone.png" alt="">
-                                {{-- <h2>Sign Up</h2>
-                                <p>provide the necessary information asked</p>
-                                <p>you wiill be taken to your dashboard where you will find the plans available</p> --}}
                             </div>
                             <div class="item">
                                     <img class="img-fluid" src="img/home/signup/PNG5.png" alt="">
@@ -615,17 +435,24 @@
             </div>
             <div class="row">
                 <div class="col-md-10 offset-md-1 ">
-                    <div class="bitcoin-calculator">
+                    {{-- <div class="bitcoin-calculator">
                         <script src="https://cdn.jsdelivr.net/gh/coinponent/coinponent@1.2.6/dist/coinponent.js"></script>
                         <coin-ponent dark-mode></coin-ponent>
-                        <!-- <img src="img/deleteFake.JPG" class="img-fluid" alt="Responsive image"> -->
-                    </div>
+                    </div> --}}
+                   {{-- <div  style="width:474px; background-color: #fff;border:2px solid #888;text-align:center;padding:0px;margin:0px auto"><div style="margin:0px; padding: 3px 0px 2px 0px;text-align:center;background-color:#ccc;border:1px solid #888;width:472;"><a title="Bitcoin to American Dollar Converter" class="HS1label" style="text-weight:bold;text-decoration:none;color:#000000;" href="https://fx-rate.net/BTC/USD/"><b><img style="margin:0;padding:0;border:0;" src="https://fx-rate.net/images/countries/us.png" border=0 > &nbsp;Bitcoin to <img style="margin:0;padding:0;border:0;" src="https://fx-rate.net/images/countries/btc.png" border=0 > &nbsp;Dollar Converter</b></a></div><script type="text/javascript" src="https://fx-rate.net/converter.php?size=short&layout=horizontal&currency_pair=USD&currency=BTC"></script></div> --}}
+                   {{-- <div style="margin: 0px; padding: 0px; border: 2px solid rgb(136, 136, 136); width: 100%; background-color: transparent;" align="center"><div style="width: 100%; border-bottom: 1px solid rgb(136, 136, 136); margin: 0px; padding: 0px; text-align: center; color: rgb(170, 170, 170); background-color: transparent;" align="center"><a class="HS2label" href="https://fx-rate.net/BTC/USD/" style="text-decoration: none; font-size: 12px; font-weight: bold; text-align: center; font-family: Arial; margin-bottom: 6px; color: rgb(170, 170, 170);"></a></div><script type="text/javascript" src="https://fx-rate.net/converter.php?layout=horizontal&amount=1&tcolor=aaaaaa&currency=BTC&currency_pair=USD&default_pair=BTC/USD"></script></div> --}}
+                   <div class="btc-cal">
+                    <script type="text/javascript">
+                      crypt_calc_background_color = "#ffffff";crypt_calc_border_width = ;crypt_calc_font_family = "Verdana";crypt_calc_font_size = "large";</script>
+                   <script type="text/javascript" src="https://www.cryptonator.com/ui/js/widget/calc_widget.js"></script>
+                  </div>
+
                 </div>
-                <div class="col-md-12">
+                {{-- <div class="col-md-12">
                     <div class="enter-msg">
                         <p>Use "btc" for Bitcoin, "bch" for Bitcash and "eth" for Etherium</p>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
@@ -664,7 +491,6 @@
                 </div>
                 <div class="col-md-6">
                     <div class="chart-img">
-                        <!-- <img src="img/deletefakechart.JPG" class="img-fluid" alt="Responsive image"> -->
                         <div class="btcwdgt-chart"></div>
                     </div>
                 </div>
@@ -680,8 +506,6 @@
                 <div class="col-md-12">
                     <div class="head">
                         <h2>our team</h2>
-                        {{-- <img src="img/generics/icon/header-gray.png" alt=""><br> --}}
-                        <!-- <p>A few of our experts.</p> -->
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -693,7 +517,7 @@
                             </div>
                             <div class="border two">
                                 <div></div>
-                            </div><a href="#"></a>
+                            </div><a href=""></a>
                         </figure>
                         <div class="name">
                             <h3>Virgil D. Allen</h3>
@@ -710,7 +534,7 @@
                             </div>
                             <div class="border two">
                                 <div></div>
-                            </div><a href="#"></a>
+                            </div><a href=""></a>
                         </figure>
                         <div class="name">
                             <h3>Yvette B. Anderson</h3>
@@ -727,7 +551,7 @@
                             </div>
                             <div class="border two">
                                 <div></div>
-                            </div><a href="#"></a>
+                            </div><a href=""></a>
                         </figure>
                         <div class="name">
                             <h3>Linda M. Williams</h3>
@@ -744,7 +568,7 @@
                             </div>
                             <div class="border two">
                                 <div></div>
-                            </div><a href="#"></a>
+                            </div><a href=""></a>
                         </figure>
                         <div class="name">
                             <h3>Hector D. Hughes</h3>
@@ -882,7 +706,7 @@
             <div class="row">
                 <div class="col-md-12">
                      <div class="head" >
-                                <h2>What We Accept</h2>                                                                                                                                                                                                                                                                                                                                                                                                                                             
+                                <h2>What We Accept</h2>
                       </div>
                 </div>
                 <div class="col-sm-8 offset-sm-2">
@@ -890,21 +714,21 @@
                         <div class="col-sm-4">
                             <div class="icoins">
                                 <a href="">
-                                    <img src="img/home/services/fake1.png" class="img-fluid"  alt="Responsive image">
+                                    <img src="img/home/services/btc.png" class="img-fluid"  alt="Responsive image">
                                 </a>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="icoins">
                                 <a href="">
-                                    <img src="img/home/services/3.png" class="img-fluid"  alt="Responsive image">
+                                    <img src="img/home/services/bch.png" class="img-fluid"  alt="Responsive image">
                                 </a>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="icoins">
                                 <a href="">
-                                    <img src="img/home/services/9.jpg" class="img-fluid"  alt="Responsive image">
+                                    <img src="img/home/services/eth.png" class="img-fluid"  alt="Responsive image">
                                 </a>
                             </div>
                         </div>
@@ -913,17 +737,117 @@
             </div>
         </div>
     </section>
-  
+    <section id="our-security">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                         <div class="head" >
+                                    <h2>We are covered by the top industry protections </h2>
+                          </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="security">
+                                <div class="col-md-12">
+                                        <div class="security-slide">
+                                            <div class="security-owl-carousel owl-carousel owl-theme">
+                                                <div class="item" >
+                                                        <div class="name-pic">
+                                                            <div class="pics">
+                                                                <img src="img/home/security/1.png" alt="" class="img-fluid">
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                <div class="item" >
+                                                        <div class="name-pic">
+                                                            <div class="pics">
+                                                                <img src="img/home/security/2.png" alt="" class="img-fluid">
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                <div class="item" >
+                                                        <div class="name-pic">
+                                                            <div class="pics">
+                                                                <img src="img/home/security/3.png" alt="" class="img-fluid">
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                <div class="item" >
+                                                        <div class="name-pic">
+                                                            <div class="pics">
+                                                                <img src="img/home//security/4.png" alt="" class="img-fluid">
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                <div class="item" >
+                                                        <div class="name-pic">
+                                                            <div class="pics">
+                                                                <img src="img/home//security/5.png" alt="" class="img-fluid" >
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                <div class="item" >
+                                                        <div class="name-pic">
+                                                            <div class="pics">
+                                                                <img src="img/home//security/6.png" alt="" class="img-fluid">
+                                                            </div>
+                                                        </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 @endsection
 {{--------------------------------------------------------------------------}}
 @section('style')
     <link rel="stylesheet" href="{{asset('css/vendor/owl.carousel.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/vendor/owl.theme.default.min.css')}}">
+    {{-- <link href="https://vjs.zencdn.net/7.6.5/video-js.css" rel="stylesheet"> --}}
+<style >
+
+#ours h2{font-size: 40px!important; line-height: 40px;color:#0d1120;font-weight: 300;letter-spacing: 3px;}
+#ours p{line-height: 35px;color:rgba(#0d1120, .5)}
+#ours .plans-btn{background: teal;color:#aaa; transition:all ease .9s;padding:15px; font-weight:700}
+#ours .plans-btn:hover{background: rgba(teal, .5);color:#fff; transition:all ease .9s;}
+
+
+</style>
+    <style>
+
+       .btc-cal .cryptonatorwidget{
+        border-radius: 4px!important;
+        padding: 50px!important;
+        background: #0d1120!important;
+        border: 2px solid #aaa!important;
+        font-family: Arial;
+        font-size: 100%;
+        color: #aaa!important;
+      } 
+           .btc-cal .cryptonatorwidget table tbody tr td:first-chld{width:80%;}
+      .btc-cal .cryptonatorwidget table tbody tr td:nth-child(2){width:20%}
+      .btc-cal .cryptonatorwidget table tbody tr td input{height:40px!important;padding: 10px!important;margin-bottom: 10px!important;font-size: 25px;background: transparent!important;color: #aaa!important;border:2px solid teal;}
+      .btc-cal .cryptonatorwidget table tbody tr td select{height:40px!important;padding: 10px!important;margin-bottom: 10px!important;font-size: 20px;background: teal!important;color:#0d1120!important;border:none;}
+      .btc-cal .cryptonatorwidget table tbody tr td select option{width:100%!important}
+      .btc-cal .cryptonatorwidget table tbody tr td{padding:0!important}
+      
+      .btc-cal .cryptonatorwidget div{display:none;}
+
+      /* .btc-cal .cryptonatorwidget table tbody tr td input{margin-bottom:10px!important;}   */
+      /* .btc-cal .cryptonatorwidget table tbody tr td select{color:red!important;} */
+      </style>
 
 
 @endsection
 {{-----------------------------------------------------------------------}}
 @section('script')
+{{-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+<script src='https://vjs.zencdn.net/7.6.5/video.js'></script> --}}
     {{--<script src="{{asset('js/owl.carousel.min.js')}}"></script>--}}
     <script>
         var accordion = new Accordion('.accordion-container',{
@@ -954,7 +878,7 @@
             },false)
         })(document,'script','https://widgets.bitcoin.com/widget.js','btcwdgt');
     </script>
-    <script type="text/javascript"     src="https://ethereumprice.org/assets/js/widget/app.min.js">
+    {{-- <script type="text/javascript"     src="https://ethereumprice.org/assets/js/widget/app.min.js">
     </script>
 @endsection
 {{--------------------------------------------------------}}

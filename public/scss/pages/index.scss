@@ -49,17 +49,17 @@
       margin-left: 100px;
       h1{font-size: 35px; font-family: Uni Sans Thin, 'Blinker', sans-serif; text-transform:capitalize;font-weight: 600;margin-bottom: 10px; color:$color-4;}
       p{font-size: 17px; font-family: 'Blinker', serif;line-height: 27px; color:$color-7;font-weight: 300;font-style: italic;margin-bottom: 20px;}
-      
+
       .btn{
         padding: 10px 30px; border: 2px solid $color-3; color:$color-3; background:transparent;transition:all .9s ease;
         &:hover{transition:all .9s ease;border: 2px solid $color-3;color:$color-1;background:$color-3;}
       }
-    
+
         .caption-inner{
         width:70%;
       }
       &-1{
-        left: 0;transform: translateY(-50%);bottom: 0;top: 55%;text-align:left;
+        left: 0;transform: translateY(-40%);bottom: 0;top: 50%;text-align:left;
       }
       &-3{
         left: 50%;transform: translateY(-50%);bottom: 0;top: 50%;
@@ -81,7 +81,7 @@
    .courasel-overlay{position: absolute!important;width: 100%;height: 100%;top: 0;left: 0;background: rgba(0,0,0,.8);
      //z-index:-10;
     }
-  
+
 
 }//.mycourasel
 //================
@@ -146,6 +146,16 @@
     &:first-child{border-left:none;}
   }
 }
+
+.col-md-4.current-prices-info{
+  text-align: center;
+  border-right:2px solid $color-7;
+  &:last-child{border:none!important;}
+}
+.current-prices-info{
+  p{color:$color-1; font-weight:700;font-family:UniSansW01-Regular,'Blinker', sans-serif!important;}
+  p:last-child{color:$color-6; font-family:UniSansW01-Regular!important; font-size: 45px ;line-height: 100%;font-weight: 400 !important;}
+}
 // =========================================================
                       // CRYPTO INTRO
 // =========================================================
@@ -173,10 +183,10 @@
   padding-bottom: 100px;
   .info{
     &-head{
-      margin-bottom:2opx;
-      h1{font-size:35px;font-weight:bold;color:$color-1;text-transform:uppercase;} 
+      margin-top:30px;
+      h1{font-size:35px;font-weight:bold;color:$color-1;text-transform:uppercase;}
     }
-    p{}
+    // p{}
        a.btn.bttn-stretch.bttn-md.bttn-primary{color:$color-1!important;font-weight:bold;padding: 5px 0;margin-top:15px;}
   }
 }
@@ -217,102 +227,34 @@
                       // OUR PLANS
 // =========================================================
 #our-plans{
-  background: $color-2;
-  .head{
-    h1{color: rgba(170, 170, 170, 0.5);}
+// background:red;
+  .our-plans-link{
+    .our-link{
+          display: flex;
+          align-items: end;
+          img{
+            width: 60px;height: 60px;
+            margin-right: 10px;
+          }
+      p{font-size:32px;margin-bottom: 10px;color:rgba($color-1,.8);margin-top: 20px;color: #636b6f;font-family: 'Nunito', sans-serif;font-weight: 200;}
+    }
   }
-
-  .card {
-    width: 85%;
-    margin: auto;
-    background-color: $color-1;
-    border-radius: 10px;
-    //box-shadow: -1rem 0 3rem #000;
-    transition: 0.4s ease-out;
-    .card-inner{
-      padding: 20px 15px 0 15PX;//mine
-      .title {
-        text-align: center;
-        color: rgba(170, 170, 170, .5);
-        font-weight: 800;
-        line-height: 21px;
-        font-size: 30px;
-        margin-bottom: 4px;
-        transition: 0.6s ease-out;
-      }
-      .percent{font-size: 100px;color: $color-6;text-align: center;margin-top: 30px;margin-bottom: 30px;transition: 0.6s ease-out;}
-      .percent-limit{color: #aaa; text-align: center}
-      .invest{font-size: 25px;color: rgba(255,255,255,.5);font-weight: 700;padding-top: 20px;transition: 0.6s ease-out; text-align: center}
-      .table{ margin-bottom:0;
-         td{
-          padding: 0.40rem;
-          border-top: 1px solid rgba(255,255,255,.1);
-          color:#aaa;
-          &:last-child{text-align:right;}
-        }
-      }
-    }//card-inner
-    hr{width: 80%; background:#2e3033; height: 1px; border-radius: 50%; margin: 0 auto;transition: 0.6s ease-out;  }
-    .card-footer{
-      padding: 10px 20px;
-      text-align: center;
-      background: $color-1;
-      transition: 0.6s ease-out;
-      //border-top: 1px solid #2e3033;
-
-      a{color: #aaa; text-decoration: none;font-weight: 600; font-size: 20px;}
-    }
-    .bar {
-      position: absolute;
-      top: 60px;
-      left: 15px;
-      height: 5px;
-      width: 90%;
-      .emptybar {
-        background-color: #2e3033;
-        width: 100%;
-        height: 100%;
-      }
-      .filledbar {
-        position: absolute;
-        top: 0px;
-        z-index: 3;
-        width: 0px;
-        height: 100%;
-        background: rgb(0,154,217);
-        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,.5) 65%, rgb(85, 85, 85) 85% ,rgb(46, 48, 51) 100%);
-        transition: 0.6s ease-out;
-      }
-    }
-    &:hover {
-      transform: translateY(-2px);
-      transition: 0.4s ease-out;
-      .title {color: rgba(170, 170, 170, 1);transition: 0.6s ease-out;}
-      .invest{color: rgba(255,255,255,.7);transition: 0.6s ease-out;}
-      .percent{color: $color-7;transition: 0.6s ease-out;}
-      hr{width: 100%; background:rgba(170, 170, 170, .7); transition: 0.6s ease-out; border-radius: 0  }
-      .filledbar {
-        width: 90%;
-        transition: 0.4s ease-out;
-      }//.card:hover .filledbar
-      .card-footer{background: $color-2;transition: 0.6s ease-out;
-        a{color:$color-6; transition: 0.6s ease-out; }
-      }
-    }
-  }//.card
+  .ours{
+    h2{color: #636b6f!important;font-family: 'Nunito', sans-serif!important;font-weight: 200!important;}
+  }
 }
 // =========================================================
                       // STEPS
 // =========================================================
 .steps{
   background: $color-5;
-  height: 100%;
+  // height: 100%;
 
   #steps{padding-right: 30px;}
   #steps .owl-carousel .owl-stage{width:100%!important;}
   #steps .owl-carousel.owl-drag .owl-item{width:100%!important;}
   #sync2 .item {background: #C9C9C9;padding: 10px 10px 9px 0px;margin: 5px;border-radius: 3px;text-align: center;cursor: pointer;display: flex;}
-  #sync2 .item img{width: 50px; height: 50px;margin:10px;opacity: .6; -webkit-filter: grayscale(100%) brightness(0%);transition: all .9s ease;}
+  #sync2 .item img{width: 50px; height: 50px;margin:10px;opacity: .6; filter: grayscale(100%) brightness(0%);transition: all .9s ease;}
   #sync2 .item .topic{text-align:left;}
   #sync2 .item .topic h3 {font-size: 19px;color:$color-1;font-weight: 600}
   #sync2 .item .topic p{font-size: 14px;color:$color-2;line-height: 23px;}
@@ -322,7 +264,7 @@
     h3{color:$color-7;font-weight: 600}
     p{color:$color-4}
     i.fa.fa-angle-right{display:inline;color:$color-7}
-    img{opacity: 1;transition: all .9s ease;-webkit-filter: grayscale(0) brightness(100%);}
+    img{opacity: 1;transition: all .9s ease; filter: grayscale(0) brightness(100%);}
   }
 
   div#sync1.owl-carousel.owl-theme.owl-loaded.owl-drag{
@@ -337,10 +279,10 @@
   #sync1 .item {background: transparent;padding: 0;margin: 5px auto;}
   #sync1 .item h2{font-size: 35px; font-weight: 600;color:$color-6;text-transform: uppercase}
   #sync1 .item p{line-height: 25px;font-weight: 300;font-size: 16px;color:$color-4;}
- 
-  .owl-theme .owl-nav {
+
+  // .owl-theme .owl-nav {
     /*default owl-theme theme reset .disabled:hover links */
-  }
+  // }
   .owl-theme .owl-nav [class*='owl-'] {
     transition: all .3s ease;
   }
@@ -381,7 +323,7 @@
         div div div div svg g g path{display: none;}
         // div div div{border-left:1px solid $color-7!important;
         //   border-right:1px solid $color-7!important;  }
-      } 
+      }
   }//.bitcoin-calculator
   .enter-msg{
     text-align:center;
@@ -437,128 +379,19 @@ background: $color-1;
   }
 }
 
-// =========================================================
-                      // OUR SERVICE ICON
-// =========================================================
-#our-services-icons{
-  padding: 50px;
-  background: #fff;
-  border-top:  solid 2px #f2f2f2;
-  .head{text-align:center;margin-bottom:50px}
-  .icoins{
-    //margin-right: 40px;
-    a{
-      margin: 0 15px 30px 15px;
-      //transition: all .9s ease;
-      img{
-        //height: 26px;
-        filter: grayscale(100%) brightness(120%);
-        opacity: .6;
-        -webkit-filter: grayscale(100%) brightness(120%);
-        transition: all .9s ease;
-      }
-      &:hover img{
-        cursor: pointer;
-        opacity: 1;
-        transition: all .9s ease;
-        -webkit-filter: grayscale(0) brightness(100%);
-      }
 
-    }
-
-  }
-}
 
 // =========================================================
                       // CURRENT PRICE INFO
 // =========================================================
-.col-md-4.current-prices-info{
-  text-align: center;
-  border-right:2px solid $color-7;
-  &:last-child{border:none!important;}
-}
-.current-prices-info{
-  p{color:$color-1; font-weight:500;font-family:UniSansW01-Regular,'Blinker', sans-serif!important;}
-    .ethereum-price-widget{
-        height: 0px!important;
-        width: 100%!important;
-        background-image:none!important;
-//        background-position: 0;
-//        background-size: 0;
-//        background-repeat: no-repeat;
-        div{
-            width:100%!important;
-            border-radius: 0!important;
-            border: none!important;
-            background:transparent!important;  
-            box-shadow: 0 0 3px 1px rgba(255, 255, 255, 1);
-            div{
-                font-weight: bold;
-                text-align: center;
-                padding: 0 !important;
-                div{
-                    font-weight: bold;
-                    text-align: center;
-                    padding: 0 !important;
-                    span{
-                        color: $color-6!important;
-                      
-                        line-height: 100%!important;
-                        font-size: 45px !important;
-                        font-weight: 400 !important;
-                         font-family:UniSansW01-Regular!important;
-                        &:last-child{display: none!important}
-                    }//
-         }
-                .sparkline{display: none!important}
-                .epw-pair{display: none!important}
-                a{display: none!important}
-      }
-    }    
-   }
-   .current-btc-prices{
-     p{margin-bottom: -10px !important; font-family:UniSansW01-Regular,'Blinker', sans-serif!important;color:$color-1;font-wei:600}
-    span{display: block;}
-  }
-  .btcwdgt{color:$color-7!important;}
-  .btcwdgt.btcwdgt-text-ticker.btcwdgt-s-price {
-    /*margin-top: -3px !important;*/
-    min-width: 100% !important;
-    box-shadow: none !important;
-    margin: 0 !important;
-    background-color: transparent !important;
-  }  
-  .btcwdgt.btcwdgt-s-price .btcwdgt-body {
-    padding: 0 !important;
-    margin-top: .9em !important;
-    height: 4em !important;
-   /* text-align: center !important; */
-   strong.arrow.up {left: 50px !important;}
-   strong.arrow.down {left: 50px !important;}
-  } 
-  /* .btcwdgt-text-ticker .btcwdgt-body{ padding: 0 !important; margin-top: 0.9 0 0 0 !important;}  */
-  .btcwdgt-text-ticker .btcwdgt-body ul{margin: 0.8em 0 !important;display: block!important;width:100%!important}
-  /* .btcwdgt-s-price .btcwdgt-body {height: 0em !important;} */
-  .btcwdgt.btcwdgt-s-price .btcwdgt-body ul li {
-            line-height: normal !important;
-            font-size: 45px !important;
-            font-weight: 400 !important;
-            font-family:Uni Sans Thin;
-            text-align: center!important;
-            color:$color-6!important
-        }
 
-  .btcwdgt.btcwdgt-s-price .btcwdgt-body span, .btcwdgt.btcwdgt-text-ticker .btcwdgt-footer, .btcwdgt.btcwdgt-text-ticker .btcwdgt-edge {
-  display: none !important;
-  }
-}
 // =========================================================
                       // OUR TEAM
 // =========================================================
 .our-team{
   background: $color-2;
   .head{h1{color:$color-6;}}
- 
+
   .our-team-main{
     .name{
       h3{font-weight: 600; font-size: 24px; color:$color-4;margin-bottom: 4px; text-align:center;}
@@ -687,7 +520,7 @@ background: $color-1;
   background-size:cover;
   width: 100%;
   height:80vh;
- 
+
   .head{
     h1{ color: $color-7!important;}
   }
@@ -700,7 +533,7 @@ background: $color-1;
         img{border-radius: 50%;border: 5px solid white;}
         }
         .name{margin-left: 15px; padding: 20px 0;
-        p{margin-bottom: 0;font-weight: 600}
+        p{margin-bottom: 0;font-weight: 600;color:$color-4;}
           span{font-style: italic; color:$color-7;font-size: 14px}
         }
       }
@@ -710,8 +543,113 @@ background: $color-1;
   .owl-dots{margin-top:-30px;}
 }
 // ====================================================
+// =========================================================
+                      // OUR SERVICE ICON
+// =========================================================
+#our-services-icons{
+  padding: 50px;
+  // background: #fff;
+  background:#eee!important;
+  border-top:  solid 2px #f2f2f2;
+  .head{text-align:center;margin-bottom:50px}
+  .icoins{
+    //margin-right: 40px;
+    a{
+      margin: 0 15px 30px 15px;
+      //transition: all .9s ease;
+      img{
+        //height: 26px;
+        filter: grayscale(100%) brightness(120%);
+        opacity: .6;
+        -webkit-filter: grayscale(100%) brightness(120%);
+        transition: all .9s ease;
+      }
+      &:hover img{
+        cursor: pointer;
+        opacity: 1;
+        transition: all .9s ease;
+        filter: grayscale(0) brightness(100%);
+      }
+
+    }
+
+  }
+}
+// =========================================================
+                      // OUR SECURITY
+// =========================================================
+#our-security {
+  padding: 100px;
+  .head{
+    h2{color:$color-6!important}
+  }
+}
+#our-security .security {
+  height: 100%;
+  padding-left: 120px;
+}
+#our-security .security .security-slide .item .name-pic .pics {
+  padding-right: 20px;
+}
+#our-security .security .security-slide .item .name-pic .pics:first-child {
+  padding-left: 20px;
+}
+#our-security .security .security-slide .item .name-pic .pics img {
+  opacity: 0.6;
+  -webkit-filter: grayscale(100%) brightness(0%);
+  transition: all 0.9s ease;
+}
+#our-security .security .security-slide .owl-item.active.center .item .name-pic .pics img {
+  opacity: 1;
+  -webkit-filter: grayscale(0%) brightness(100%);
+  transition: all 0.9s ease;
+}
+
+// #our-security{
+//   // background:#f9f9f9!important;
+//   padding:100px;
+//     // .head{margin-right: -100px}
+//      // .head{padding-right: -100px}
+//   .security{
+//     height:100%;
+//     // background:white;
+//     // clip-path:polygon(15% 0%, 100% 0px, 100% 100%, 0% 100%);
+//     padding-left: 120px;
+//       .security-slide{
+//           .item{
+//               .name-pic{
+//                   .pics{
+//                       padding-right: 20px;
+//                       &:first-child{padding-left: 20px;}
+//                       // img{
+//                         // height: 200px;opacity: .6; -webkit-filter: grayscale(100%) brightness(0%);transition: all .9s ease;
+
+//                       // }
+//                   }
+//               }
+//           }
 
 
+//       }
+//   }
+  // ------------------------------------------------
+  // .current .item {opacity: 1;transition: all .9s ease;-webkit-filter: grayscale(0) brightness(100%);}
+//  .security .security-slide .owl-item.active.center .item .name-pic .pics img {
+//     opacity: 1;
+//     -webkit-filter: grayscale(0%) brightness(100%);
+//     transition: all 0.9s ease;
+//  }
+//}
 
-
-
+// #sync2 .item img{width: 50px; height: 50px;margin:10px;opacity: .6; -webkit-filter: grayscale(100%) brightness(0%);transition: all .9s ease;}
+// #sync2 .item .topic{text-align:left;}
+// #sync2 .item .topic h3 {font-size: 19px;color:$color-1;font-weight: 600}
+// #sync2 .item .topic p{font-size: 14px;color:$color-2;line-height: 23px;}
+// #sync2 .item i.fa.fa-angle-right{font-size: 60px;margin: auto 10px;display:none}
+// #sync2 .current .item {
+//   background: $color-1;
+//   h3{color:$color-7;font-weight: 600}
+//   p{color:$color-4}
+//   i.fa.fa-angle-right{display:inline;color:$color-7}
+//   img{opacity: 1;transition: all .9s ease;-webkit-filter: grayscale(0) brightness(100%);}
+// }

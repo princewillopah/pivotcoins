@@ -1,5 +1,5 @@
 @extends('layouts.frontend')
-{{-----------------------------------------------------------------}}
+
 @section('title')
     Contact
 @endsection
@@ -14,9 +14,9 @@
                         <div class="contents-message">
                             
                             <p>Ask a question—we’re all ears!</p>
-                            <h1 class="cssanimation leFadeInLeft sequence">Contact us</h1>
+                            <h1 class="cssanimation leFadeInLeft sequence">Contact Pivotcoins</h1>
                             <div class="wow fadeInUp">
-                                <span class="sub">Take a tour with us</span>
+                                <span class="sub">Have a suggestion? Question or concern? you want to <br>  know more about Pivotcoins, our investment plans? Send us a<br> message and we are going to answer all your questions.</span>
                             </div>
                         </div>
                     </div>
@@ -29,7 +29,7 @@
         <div class="container">
             <div class="contact-form-media-content">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 order-2">
                         <div class="contact-media" >
                             <div class="row">
                                 <div class="col-md-12">
@@ -62,35 +62,49 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 order-1">
                         <div class="contact-form" >
                             <h3 class="">Get in touch</h3>
-                            <p class="">
-                                Have a suggestion? Question or concern?
-                                just want to say hi or know much about Pivotcoins?
-                                Send us a message and we will get back to you as soon as we can.
+                            @include('includes.messages')
+                            <p class="">   
+                                Just complete the following input boxes, and we will get back to you as soon as we get your messages? 
                             </p>
-                            <form id="contacts_form" action="" method="POST">
+                            <form id="contacts_form" action="contact" method="POST">
+                                {{csrf_field()}}
                                 <div class="form-group field-wrapper">
-                                  <input type="text" class="form-control" style="width: 100%" placeholder="Name">
+                                  <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus style="width: 100%">
                                     <span class="bottom bottoms"></span>
                                     <span class="right"></span>
                                     <span class="top"></span>
                                     <span class="left"></span>
+                                     @error('name')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                                <div class="form-group" style="margin-top: 28px; margin-bottom: 28px">
+                               <input type="email" class="form-control @error('email') is-invalid @enderror" style="width: 100%" placeholder="Email"  autocomplete="email" required name="email"  value="{{ old('email') }}">
+                                    <span class="bottom bottoms"></span>
+                                    <span class="right"></span>
+                                    <span class="top"></span>
+                                    @error('email')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
                                 </div>
                                 <div class="form-group">
-                               <input type="email" class="form-control" style="width: 100%" placeholder="Email">
+                                  <textarea class="form-control rounded-0 @error('message') is-invalid @enderror" id="message" name="message" rows="10"  placeholder="Message" required autocomplete="message">{{ old('message') }}</textarea>
                                     <span class="bottom bottoms"></span>
                                     <span class="right"></span>
                                     <span class="top"></span>
                                     <span class="left"></span>
-                                </div>
-                                <div class="form-group">
-                                  <textarea class="form-control rounded-0" id="message" name="message" rows="10"  placeholder="Message" ></textarea>
-                                    <span class="bottom bottoms"></span>
-                                    <span class="right"></span>
-                                    <span class="top"></span>
-                                    <span class="left"></span>
+                                     @error('message')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
                                 </div>
                                <button type="submit" class="btn rounded-0 form-submit w-25 bttn-fill bttn-md bttn-primary" name="submit">Send <i class="fa fa-plane"></i></button>
 

@@ -26,10 +26,12 @@ class LoginController extends Controller
     protected function redirectTo()
 {
     if (auth()->user()->admin == 1) {
-        return '/members';
-        // return route('admin.index');
+        return '/dashboard';//admin dashboard
+       
+    }else{
+          return '/home';//member dashboard
     }
-    return '/home';
+  
 }
 
     public function __construct()

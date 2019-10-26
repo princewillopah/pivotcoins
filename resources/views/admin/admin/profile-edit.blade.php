@@ -52,7 +52,7 @@
                        </div>
                        <div class="col-md-8">
                            <div class="main-info">
-                            <form action="{{ route('register',$user->id) }}" method="POST" enctype="multipart/form-data">
+                            <form action="{{ route('profileupdate') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 @method('PUT')
                                         <div class="form-group">
@@ -85,9 +85,14 @@
                                             @enderror
                                         </div>
         
-                                       <div class="form-group">
-                                            <label for="phone" class="col-form-label text-md-right">{{ __('Phone Number') }}</label>
-                                            <input id="phone" type="text" class="form-control" name="phone" value="{{$user->phone}}" autocomplete="phone" >
+                                        <div class="form-group">
+                                            <label for="phone_number" class="col-form-label text-md-right">{{ __('Phone Number') }}</label>
+                                            <input id="phone_number" type="text" class="form-control @error('phone_number') is-invalid @enderror" name="phone_number" value="{{ $user->phone_number}}" required autocomplete="phone_number" autofocus>
+                                            @error('phone_number')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
                                         </div>
                                         <div class="form-group">
                                                 <label for="photo">Profile Image:</label>

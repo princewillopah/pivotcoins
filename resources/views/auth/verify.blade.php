@@ -126,7 +126,7 @@ Verification
                         {{-- <div class="card-header">{{ __('Verify Your Email Address') }}</div> --}}
                     <div class="verif"> <h3>Thank you for signing up,  <span>{{ Auth::user()->name }}</span></h3></div>
                             
-                        <div class="card-body">
+                        <div class="card-body" style="color: #aaa!important">
                             @if (session('resent'))
                                 <div class="alert alert-success" role="alert">
                                     {{ __('A fresh verification link has been sent to your email address.') }}

@@ -28,13 +28,23 @@
       font-family: "Blinker", sans-serif !important; }
     .sections-white .head p {
       color: #2b7a78;
-      font-weight: 500; }
+      font-weight: 500;
+      width: 70%;
+      text-align: center;
+      margin: 0 auto; }
 
 h3 {
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
   color: rgba(170, 170, 170, 0.6);
+  font-family: "Blinker", sans-serif !important; }
+
+.h3 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(19, 25, 38, 0.8);
   font-family: "Blinker", sans-serif !important; }
 
 h2 {
@@ -133,6 +143,9 @@ body p {
     color: #2b7a78 !important;
     font-weight: 300;
     font-style: "Blinker", sans-serif !important; }
+
+/* div.rate{display: none;}*/
+
   #header #top-bar .faq-reg-log li {
     border-right: 1px solid #aaa;
     transition: all .5s ease;
@@ -181,7 +194,7 @@ body p {
 
 #header #navbar li.active a.nav-link {
   color: #2b7a78 !important; }
-
+#header li.nav-item.mynavlink.mobile{display: none}
 .get-started {
   background: #eee; }
   .get-started .bbtn {
@@ -365,9 +378,9 @@ body p {
       width: 70%; }
     .mycourasel .carousel-item .carousel-caption-1 {
       left: 0;
-      transform: translateY(-50%);
+      transform: translateY(-40%);
       bottom: 0;
-      top: 55%;
+      top: 50%;
       text-align: left; }
     .mycourasel .carousel-item .carousel-caption-3 {
       left: 50%;
@@ -434,7 +447,7 @@ body p {
   padding-top: 250px;
   padding-bottom: 100px; }
   #home-about-page .info-head {
-    margin-bottom: 2opx; }
+    margin-top: 30px; }
     #home-about-page .info-head h1 {
       font-size: 35px;
       font-weight: bold;
@@ -475,117 +488,27 @@ body p {
       text-align: center;
       color: #555; }
 
-#our-plans {
-  background: #131926; }
-  #our-plans .head h1 {
-    color: rgba(170, 170, 170, 0.5); }
-  #our-plans .card {
-    width: 85%;
-    margin: auto;
-    background-color: #0d1120;
-    border-radius: 10px;
-    transition: 0.4s ease-out; }
-    #our-plans .card .card-inner {
-      padding: 20px 15px 0 15PX; }
-      #our-plans .card .card-inner .title {
-        text-align: center;
-        color: rgba(170, 170, 170, 0.5);
-        font-weight: 800;
-        line-height: 21px;
-        font-size: 30px;
-        margin-bottom: 4px;
-        transition: 0.6s ease-out; }
-      #our-plans .card .card-inner .percent {
-        font-size: 100px;
-        color: #2b7a78;
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        transition: 0.6s ease-out; }
-      #our-plans .card .card-inner .percent-limit {
-        color: #aaa;
-        text-align: center; }
-      #our-plans .card .card-inner .invest {
-        font-size: 25px;
-        color: rgba(255, 255, 255, 0.5);
-        font-weight: 700;
-        padding-top: 20px;
-        transition: 0.6s ease-out;
-        text-align: center; }
-      #our-plans .card .card-inner .table {
-        margin-bottom: 0; }
-        #our-plans .card .card-inner .table td {
-          padding: 0.40rem;
-          border-top: 1px solid rgba(255, 255, 255, 0.1);
-          color: #aaa; }
-          #our-plans .card .card-inner .table td:last-child {
-            text-align: right; }
-    #our-plans .card hr {
-      width: 80%;
-      background: #2e3033;
-      height: 1px;
-      border-radius: 50%;
-      margin: 0 auto;
-      transition: 0.6s ease-out; }
-    #our-plans .card .card-footer {
-      padding: 10px 20px;
-      text-align: center;
-      background: #0d1120;
-      transition: 0.6s ease-out; }
-      #our-plans .card .card-footer a {
-        color: #aaa;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 20px; }
-    #our-plans .card .bar {
-      position: absolute;
-      top: 60px;
-      left: 15px;
-      height: 5px;
-      width: 90%; }
-      #our-plans .card .bar .emptybar {
-        background-color: #2e3033;
-        width: 100%;
-        height: 100%; }
-      #our-plans .card .bar .filledbar {
-        position: absolute;
-        top: 0px;
-        z-index: 3;
-        width: 0px;
-        height: 100%;
-        background: #009ad9;
-        background: linear-gradient(90deg, white 0%, rgba(255, 255, 255, 0.5) 65%, #555555 85%, #2e3033 100%);
-        transition: 0.6s ease-out; }
-    #our-plans .card:hover {
-      transform: translateY(-2px);
-      transition: 0.4s ease-out; }
-      #our-plans .card:hover .title {
-        color: #aaaaaa;
-        transition: 0.6s ease-out; }
-      #our-plans .card:hover .invest {
-        color: rgba(255, 255, 255, 0.7);
-        transition: 0.6s ease-out; }
-      #our-plans .card:hover .percent {
-        color: #3aafa9;
-        transition: 0.6s ease-out; }
-      #our-plans .card:hover hr {
-        width: 100%;
-        background: rgba(170, 170, 170, 0.7);
-        transition: 0.6s ease-out;
-        border-radius: 0; }
-      #our-plans .card:hover .filledbar {
-        width: 90%;
-        transition: 0.4s ease-out; }
-      #our-plans .card:hover .card-footer {
-        background: #131926;
-        transition: 0.6s ease-out; }
-        #our-plans .card:hover .card-footer a {
-          color: #2b7a78;
-          transition: 0.6s ease-out; }
+#our-plans .our-plans-link .our-link {
+  display: flex;
+  align-items: end; }
+  #our-plans .our-plans-link .our-link img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px; }
+  #our-plans .our-plans-link .our-link p {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: rgba(13, 17, 32, 0.8);
+    margin-top: 20px; }
+
+#our-plans .ours h2 {
+  color: #636b6f !important;
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 200 !important; }
 
 .steps {
   background: #eee;
-  height: 100%; }
+  /*default owl-theme theme reset .disabled:hover links */ }
   .steps #steps {
     padding-right: 30px; }
   .steps #steps .owl-carousel .owl-stage {
@@ -605,7 +528,7 @@ body p {
     height: 50px;
     margin: 10px;
     opacity: .6;
-    -webkit-filter: grayscale(100%) brightness(0%);
+    filter: grayscale(100%) brightness(0%);
     transition: all .9s ease; }
   .steps #sync2 .item .topic {
     text-align: left; }
@@ -634,7 +557,7 @@ body p {
     .steps #sync2 .current .item img {
       opacity: 1;
       transition: all .9s ease;
-      -webkit-filter: grayscale(0) brightness(100%); }
+      filter: grayscale(0) brightness(100%); }
   .steps div#sync1.owl-carousel.owl-theme.owl-loaded.owl-drag {
     background: transparent; }
   .steps #sync1 .item {
@@ -651,8 +574,6 @@ body p {
     font-weight: 300;
     font-size: 16px;
     color: #aaa; }
-  .steps .owl-theme .owl-nav {
-    /*default owl-theme theme reset .disabled:hover links */ }
   .steps .owl-theme .owl-nav [class*='owl-'] {
     transition: all .3s ease; }
   .steps .owl-theme .owl-nav [class*='owl-'].disabled:hover {
@@ -721,7 +642,7 @@ body p {
 
 #our-services-icons {
   padding: 50px;
-  background: #fff;
+  background: #eee !important;
   border-top: solid 2px #f2f2f2; }
   #our-services-icons .head {
     text-align: center;
@@ -737,7 +658,7 @@ body p {
       cursor: pointer;
       opacity: 1;
       transition: all .9s ease;
-      -webkit-filter: grayscale(0) brightness(100%); }
+      filter: grayscale(0) brightness(100%); }
 
 .col-md-4.current-prices-info {
   text-align: center;
@@ -745,82 +666,17 @@ body p {
   .col-md-4.current-prices-info:last-child {
     border: none !important; }
 
-.current-prices-info {
-  /* .btcwdgt-text-ticker .btcwdgt-body{ padding: 0 !important; margin-top: 0.9 0 0 0 !important;}  */
-  /* .btcwdgt-s-price .btcwdgt-body {height: 0em !important;} */ }
-  .current-prices-info p {
-    color: #0d1120;
-    font-weight: 500;
-    font-family: UniSansW01-Regular, "Blinker", sans-serif !important; }
-  .current-prices-info .ethereum-price-widget {
-    height: 0px !important;
-    width: 100% !important;
-    background-image: none !important; }
-    .current-prices-info .ethereum-price-widget div {
-      width: 100% !important;
-      border-radius: 0 !important;
-      border: none !important;
-      background: transparent !important;
-      box-shadow: 0 0 3px 1px white; }
-      .current-prices-info .ethereum-price-widget div div {
-        font-weight: bold;
-        text-align: center;
-        padding: 0 !important; }
-        .current-prices-info .ethereum-price-widget div div div {
-          font-weight: bold;
-          text-align: center;
-          padding: 0 !important; }
-          .current-prices-info .ethereum-price-widget div div div span {
-            color: #2b7a78 !important;
-            line-height: 100% !important;
-            font-size: 45px !important;
-            font-weight: 400 !important;
-            font-family: UniSansW01-Regular !important; }
-            .current-prices-info .ethereum-price-widget div div div span:last-child {
-              display: none !important; }
-        .current-prices-info .ethereum-price-widget div div .sparkline {
-          display: none !important; }
-        .current-prices-info .ethereum-price-widget div div .epw-pair {
-          display: none !important; }
-        .current-prices-info .ethereum-price-widget div div a {
-          display: none !important; }
-  .current-prices-info .current-btc-prices p {
-    margin-bottom: -10px !important;
-    font-family: UniSansW01-Regular, "Blinker", sans-serif !important;
-    color: #0d1120;
-    font-wei: 600; }
-  .current-prices-info .current-btc-prices span {
-    display: block; }
-  .current-prices-info .btcwdgt {
-    color: #3aafa9 !important; }
-  .current-prices-info .btcwdgt.btcwdgt-text-ticker.btcwdgt-s-price {
-    /*margin-top: -3px !important;*/
-    min-width: 100% !important;
-    box-shadow: none !important;
-    margin: 0 !important;
-    background-color: transparent !important; }
-  .current-prices-info .btcwdgt.btcwdgt-s-price .btcwdgt-body {
-    padding: 0 !important;
-    margin-top: .9em !important;
-    height: 4em !important;
-    /* text-align: center !important; */ }
-    .current-prices-info .btcwdgt.btcwdgt-s-price .btcwdgt-body strong.arrow.up {
-      left: 50px !important; }
-    .current-prices-info .btcwdgt.btcwdgt-s-price .btcwdgt-body strong.arrow.down {
-      left: 50px !important; }
-  .current-prices-info .btcwdgt-text-ticker .btcwdgt-body ul {
-    margin: 0.8em 0 !important;
-    display: block !important;
-    width: 100% !important; }
-  .current-prices-info .btcwdgt.btcwdgt-s-price .btcwdgt-body ul li {
-    line-height: normal !important;
-    font-size: 45px !important;
-    font-weight: 400 !important;
-    font-family: Uni Sans Thin;
-    text-align: center !important;
-    color: #2b7a78 !important; }
-  .current-prices-info .btcwdgt.btcwdgt-s-price .btcwdgt-body span, .current-prices-info .btcwdgt.btcwdgt-text-ticker .btcwdgt-footer, .current-prices-info .btcwdgt.btcwdgt-text-ticker .btcwdgt-edge {
-    display: none !important; }
+.current-prices-info p {
+  color: #0d1120;
+  font-weight: 700;
+  font-family: UniSansW01-Regular, "Blinker", sans-serif !important; }
+
+.current-prices-info p:last-child {
+  color: #2b7a78;
+  font-family: UniSansW01-Regular !important;
+  font-size: 45px;
+  line-height: 100%;
+  font-weight: 400 !important; }
 
 .our-team {
   background: #131926; }
@@ -953,7 +809,8 @@ body p {
         padding: 20px 0; }
         .testimonials .slide-msg .person .name-pic .name p {
           margin-bottom: 0;
-          font-weight: 600; }
+          font-weight: 600;
+          color: #aaa; }
         .testimonials .slide-msg .person .name-pic .name span {
           font-style: italic;
           color: #3aafa9;
@@ -967,6 +824,31 @@ body p {
   .testimonials .owl-dots {
     margin-top: -30px; }
 
+#our-security {
+  padding: 100px; }
+  #our-security .head h2 {
+    color: #2b7a78 !important; }
+
+#our-security .security {
+  height: 100%;
+  padding-left: 120px; }
+
+#our-security .security .security-slide .item .name-pic .pics {
+  padding-right: 20px; }
+
+#our-security .security .security-slide .item .name-pic .pics:first-child {
+  padding-left: 20px; }
+
+#our-security .security .security-slide .item .name-pic .pics img {
+  opacity: 0.6;
+  -webkit-filter: grayscale(100%) brightness(0%);
+  transition: all 0.9s ease; }
+
+#our-security .security .security-slide .owl-item.active.center .item .name-pic .pics img {
+  opacity: 1;
+  -webkit-filter: grayscale(0%) brightness(100%);
+  transition: all 0.9s ease; }
+
 #bg-about-us {
   background: #0d1120 url("../img/about/about-bg.png") no-repeat center center;
   background-size: cover;
@@ -976,7 +858,9 @@ body p {
   align-items: center;
   justify-content: center; }
   #bg-about-us .contents-message h1 {
-    color: #aaa; }
+    color: #aaa;
+    font-weight: bold;
+    font-size: 55px; }
   #bg-about-us .contents-message div {
     color: #3aafa9;
     font-style: italic; }
@@ -994,17 +878,16 @@ body p {
     height: 2px; }
 
 #about-us-vission {
+  padding: 100px;
   background: #0d1120; }
-  #about-us-vission .about-us-main {
-    margin-top: 100px; }
-    #about-us-vission .about-us-main h2 {
-      font-size: 30px;
-      text-transform: uppercase;
-      padding-bottom: 20px;
-      color: #2b7a78; }
-    #about-us-vission .about-us-main p {
-      line-height: 28px;
-      color: #aaa; }
+  #about-us-vission .about-us-main h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    color: #2b7a78; }
+  #about-us-vission .about-us-main p {
+    line-height: 28px;
+    color: #aaa; }
 
 #about-us-vision {
   padding: 100px;
@@ -1014,7 +897,26 @@ body p {
     text-transform: uppercase;
     padding-bottom: 20px; }
   #about-us-vision .about-us-main p {
-    line-height: 28px; }
+    line-height: 28px;
+    color: #2b7a78; }
+
+.why-chose-us-list {
+  display: flex; }
+  .why-chose-us-list .fa {
+    color: #2b7a78;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    line-height: 30px; }
+  .why-chose-us-list p {
+    line-height: 16px; }
+    .why-chose-us-list p span.topic {
+      color: rgba(43, 122, 120, 0.5);
+      text-transform: uppercase;
+      font-weight: 600; }
+    .why-chose-us-list p span.content {
+      color: rgba(170, 170, 170, 0.5);
+      font-weight: 300; }
 
 #bg-faq {
   background: url("../img/faq/faq-landing.jpg") no-repeat center center;
@@ -1027,7 +929,8 @@ body p {
   #bg-faq .contents-message h1 {
     color: #aaa;
     font-weight: bold;
-    font-size: 50px; }
+    font-size: 50px;
+    margin-bottom: 15px; }
   #bg-faq .contents-message div {
     color: #2b7a78;
     font-style: italic; }
@@ -1092,7 +995,7 @@ body p {
     padding: 10px 0;
     margin: 0; }
   .faq .accordion-container .panel .content p:first-child {
-    padding-top: 0; }
+    padding-top: 10px; }
   .faq .accordion-container .panel .content ul {
     margin-left: 0;
     padding-bottom: 20px;
@@ -1179,7 +1082,7 @@ body p {
     padding: 10px 0;
     margin: 0; }
   .faq-basic .accordion-container .panel .content p:first-child {
-    padding-top: 0; }
+    padding-top: 10px; }
   .faq-basic .accordion-container .panel .content ul {
     margin-left: 0;
     padding-bottom: 20px;
@@ -1209,7 +1112,7 @@ body p {
     border-bottom: #131926 1px solid; }
 
 #bg-terms {
-  background: url("../img/faq/Faq.jpg") no-repeat center center;
+  background: #0d1120 url("../img/faq/Faq.jpg") no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 40vh;
@@ -1258,9 +1161,12 @@ body p {
   display: flex;
   align-items: center;
   justify-content: center; }
+  #bg-referral .contents-message p {
+    color: #fff; }
   #bg-referral .contents-message h1 {
-    color: #2b7a78;
-    font-weight: bold; }
+    color: #aaa;
+    font-weight: bold;
+    font-size: 50px; }
   #bg-referral .contents-message div {
     color: #3aafa9;
     font-style: italic; }
@@ -1302,17 +1208,20 @@ body p {
 
 #bg-contact {
   background: #0d1120;
-  background: url("../img/contact/Flower.png") no-repeat center center #0d1120;
+  background: url("../img/contact/contact.png") no-repeat center center #0d1120;
   background-size: cover;
   width: 100%;
   height: 65vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  clip-path: polygon(100% 0px, 100% 80%, 52% 80%, 50% 91%, 48% 80%, 0px 80%, 0px 0px); }
+  justify-content: center; }
+
+  #bg-contact .contents-message p {
+    color: #eee; }
   #bg-contact .contents-message h1 {
-    color: #2b7a78;
-    font-weight: bold; }
+    color: #aaa;
+    font-weight: bold;
+    font-size: 49px; }
   #bg-contact .contents-message div {
     color: #3aafa9;
     font-style: italic; }
@@ -1321,7 +1230,6 @@ body p {
 
 .contact-form-media {
   padding: 100px 0;
-  margin-top: -50px;
   background: #fff; }
 
 .contact-form-media-content {
@@ -1467,6 +1375,7 @@ body p {
       text-decoration: none; }
 
 .plans-main {
+  background: #f9f9f9;
   padding-top: 100px;
   padding-bottom: 100px; }
   .plans-main img {
@@ -1481,6 +1390,73 @@ body p {
     color: rgba(13, 17, 32, 0.8);
     font-weight: 400;
     line-height: 28px; }
+
+#investment-plans {
+  background: #fff;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  #investment-plans .investment_plan_tab .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    /*  // make sure it wraps*/
+    background: #f9f9f9; }
+  #investment-plans .investment_plan_tab .tabs label {
+    order: 1;
+    /*  // Put the labels first*/
+    display: block;
+    padding: 1rem 3rem;
+    margin-right: 0rem;
+    border-right: 1px solid #dedede;
+    cursor: pointer;
+    background: #eee;
+    font-weight: 300;
+    transition: background ease 0.2s;
+    color: rgba(0, 0, 0, 0.43);
+    transition: all .9s ease;
+    font-size: 25px; }
+    #investment-plans .investment_plan_tab .tabs label:hover {
+      color: teal;
+      transition: all .9s ease; }
+  #investment-plans .investment_plan_tab .tabs .tab {
+    order: 99;
+    /* // Put the tabs last */
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding: 0rem 2rem;
+    background: #f9f9f9; }
+  #investment-plans .investment_plan_tab .table {
+    color: #555; }
+    #investment-plans .investment_plan_tab .table tr:first-child td {
+      border-top: none; }
+    #investment-plans .investment_plan_tab .table tr:nth-child(5) td {
+      border-bottom: 1px solid #dee2e6; }
+    #investment-plans .investment_plan_tab .table td {
+      border-color: #dee2e6;
+      padding: 1.2rem 0; }
+    #investment-plans .investment_plan_tab .table td:last-child {
+      text-align: right; }
+    #investment-plans .investment_plan_tab .table tr:last-child td {
+      text-align: center;
+      width: 100%;
+      font-size: 18px;
+      color: #2b7a78; }
+  #investment-plans .investment_plan_tab .tabs input[type="radio"] {
+    display: none; }
+  #investment-plans .investment_plan_tab .tabs input[type="radio"]:checked + label {
+    background: #f9f9f9;
+    color: teal;
+    transition: all .9s ease; }
+  #investment-plans .investment_plan_tab .tabs input[type="radio"]:checked + label + .tab {
+    display: block; }
+  @media (max-width: 45em) {
+    #investment-plans .investment_plan_tab .tabs .tab,
+    #investment-plans .investment_plan_tab .tabs label {
+      order: initial; }
+    #investment-plans .investment_plan_tab .tabs label {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 0.1rem; } }
 
 .calc {
   background: #0d1120;

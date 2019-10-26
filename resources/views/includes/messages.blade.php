@@ -1,5 +1,5 @@
 
-<div class="col-md-8 offset-md-2 mt-2">
+<div class="col-md-12 mt-2">
     @if(count($errors)>0)
        @foreach($errors->all() as $error)
           <div class="alert alert-danger">
@@ -19,7 +19,7 @@
       {{--</button>--}}
   {{--</div>--}}
 {{--@endif--}}
-<div class="col-md-8 offset-md-2 mt-2">
+<div class="col-md-12 mt-2">
     @if(session()->has('success'))
         <div class="alert alert-success alert-dismissible fade show">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
